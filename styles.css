@@ -1,7 +1,8 @@
+body{
+    padding: 5px;
+}
+
 header{
-    background-color: #CFDFE8;
-    border: 3px solid black;
-    border-radius: 25px;
     display: flex;
     align-items: center;
     padding-block: 12px;
@@ -27,4 +28,11 @@ header{
     height: 3px;
     display: block;
     border-radius: 25px;
+}
+
+.backBox{
+    background-color: #CFDFE8;
+    border: 3px solid black;
+    border-radius: 25px;
+    margin-bottom: 12px;
 }

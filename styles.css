@@ -35,7 +35,6 @@ header{
     border: none;
 }
 
-
 .hamburger span{
     background-color: black;
     width: 33px;
@@ -97,14 +96,29 @@ header{
     font-size: 30px;
 }
 
+#sparkle{
+    top: 6%;
+    left: 53%;
+}
+
 #online{
     top: 2%;
     left: 12%;
 }
 
+#e-dash{
+    top: 15.5%;
+    left: 19%;
+}
+
 #cards{
     top: 8%;
     left: 28%;
+}
+
+#circle{
+    top: 13%;
+    left: 61%;
 }
 
 #for{
@@ -113,13 +127,23 @@ header{
 }
 
 #every{
-    top: 61%;
-    left: 20%;
+    top: 60%;
+    left: 21%;
+}
+
+#underline{
+    top: 71.5%;
+    left: 16%;
 }
 
 #occasion{
-    top: 69%;
+    top: 68%;
     left: 45%;    
+}
+
+#paper-plane{
+    top: 67%;
+    left: 74%;    
 }
 
 .mainButton{
@@ -131,5 +155,5 @@ header{
     box-shadow: 5px 5px;
     font-family: 'Keep Calm';
     font-size: large;
-    margin-bottom: 7px;
+    margin-bottom: 11px;
 }

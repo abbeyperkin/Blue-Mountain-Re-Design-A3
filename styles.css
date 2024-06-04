@@ -157,3 +157,32 @@ header{
     font-size: large;
     margin-bottom: 11px;
 }
+
+#popular-categories-header{
+    padding-block: 8px;
+    padding-inline: 18px;
+    height: fit-content;
+    width: fit-content;
+}
+
+#popular-categories-header h2{
+    margin: 0px;
+    font-size: large;
+}
+
+.category{
+    padding-block: 12px;
+    padding-inline: 18px;
+    height: 55px;
+    font-size: 12px;
+}
+
+.category h3{
+    margin: 0px;
+}
+
+#categories-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 11px;
+}

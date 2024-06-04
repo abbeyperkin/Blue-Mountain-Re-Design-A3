@@ -2,7 +2,7 @@
     font-family: 'Keep Calm';
     src: url('/Assets/font/KeepCalm-Medium.woff2') format('woff2'),
         url('/Assets/font/KeepCalm-Medium.woff') format('woff');
-    font-weight: 100;
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
@@ -10,6 +10,10 @@
 body{
     padding: 5px;
     font-family: 'Keep Calm';
+}
+
+h1, h2, h3, h4{
+    font-weight: lighter;
 }
 
 header{
@@ -91,7 +95,7 @@ header{
 
 #for{
     top: 10%;
-    left: 66%;
+    left: 67%;
 }
 
 #every{
@@ -108,7 +112,10 @@ header{
     background-color: #7AA4D6;
     border: 3px solid black;
     border-radius: 20px;
-    padding-inline: 45px;
-    padding-block: 20px;
+    padding-inline: 32px;
+    padding-block: 13px; 
     box-shadow: 5px 5px;
+    font-family: 'Keep Calm';
+    font-size: large;
+    margin-bottom: 7px;
 }

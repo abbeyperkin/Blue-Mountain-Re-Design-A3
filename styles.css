@@ -22,14 +22,14 @@ h1, h2, h3, h4{
     font-weight: lighter;
 }
 
-.backBox{
+.back-box{
     background-color: #CFDFE8;
     border: 2.5px solid black;
     border-radius: 25px;
     margin-bottom: 12px;
 }
 
-.mainButton{
+.main-button{
     background-color: #7AA4D6;
     border: 2.5px solid black;
     border-radius: 20px;
@@ -68,7 +68,7 @@ header{
     border-radius: 25px;
 }
 
-.headerButton{
+.header-button{
     background-color: transparent;
     border: none;
 }

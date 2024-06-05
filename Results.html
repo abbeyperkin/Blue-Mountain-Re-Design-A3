@@ -4,114 +4,117 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Birthday Cards | Blue Mountain</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="results.css">
     </head>
+
     <body>
-        <header>
+        <header class="backBox"> 
             <button class="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
-                hamburger
             </button>
             <a href="/">
-                <img width="200" src="Assets/Blue Mountain logo new.png" alt="Blue Mountain logo">
+                <img width="170" src="Assets/Blue Mountain logo new.png" alt="Blue Mountain logo">
             </a>
-            <button class="search">search</button>
-            <button class="profile">profile</button>
+            <button class="headerButton" id="search-icon"><img src="Assets/icons/Search Icon.svg" alt="Search icon"></button>
+            <button class="headerButton"><img src="Assets/icons/Bag Icon.svg" alt="Bag icon"></button>
         </header>
-        <section>
+
+        <section class="results-header">
             <p>Showing results for</p>
             <h2>“Birthday”</h2>
         </section>
-        <section>
+
+        <section id="filter-result-box" class="backBox">
             <!-- TODO: Filter SVG to be imported below -->
-            <img src="" alt=""> 
-            <p>Filters</p>
+            <section>
+                <img src="" alt=""> 
+                <p id="filters">Filters</p>
+            </section>
             <!-- TODO: Number of results to be edited -->
-            <p>21 results</p>
+            <p id="results-counter">21 results</p>
         </section>
-        <article>
-            <section>
-                <section>
-                    <section>
-                        <img src="" alt="">
+        <section id="results">
+            <article id="results-grid">
+                <section class="product-window">
+                    <section id="smh-background">
+                        <img class="card-img" src="Assets/cards/So much happiness GIF 1.svg" alt="">
+                        <img class="envelope-img" src="Assets/cards/So much happiness 1.svg" alt="">
                     </section>
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <h3>So Much Happiness</h3>
                 </section>
-                <h3>A Million Reasons</h3>
-            </section>
-            <section>
-                <section>
-                    <section>
-                        <img src="" alt="">
+                <section class="product-window">
+                    <section id="mfy-background">
+                        <img class="card-img" src="Assets/cards/Friend Years GIF 1.svg" alt="">
+                        <img class="envelope-img" src="Assets/cards/Friend Years 1.svg" alt="">
                     </section>
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <h3>More Friend Years</h3>
                 </section>
-                <h3>More Friend Years</h3>
-            </section>
-            <section>
-                <section>
-                    <section>
-                        <img src="" alt="">
+                <section class="product-window">
+                    <section id="lgw-background">
+                        <img class="card-img" src="Assets/cards/Like good whiskey.svg" alt="">
+                        <img class="envelope-img" src="Assets/cards/Group 31.svg" alt="">
                     </section>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </section>
-                <h3>Like Good Whiskey</h3>
-            </section>
-        </article>
-        <section>
-            <a href="">1</a>
-            <a href="">2</a>
-            <a href="">3</a>
-            <a href="">&gt;</a>
-        </section>
-        <footer>
-            <!-- Add links to pages -->
-            <article>
-                <section>
-                    <a href="">Member Benefits</a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                </section>
-                <section>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                </section>
-                <section>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
+                    <h3>Like Good Whiskey</h3>
                 </section>
             </article>
-            <article>
+
+            <section id="page-counter">
+                <a class="page-no selected-page" href="">1</a>
+                <a class="page-no" href="">2</a>
+                <a class="page-no" href="">3</a>
+                <a class="page-no" href="">&gt;</a>
+            </section>
+
+        </section>
+
+
+        <footer>
+            <!-- Add links to pages -->
+            <article id="footer-links" class="backBox">
                 <section>
-                    <a href="">
-                        <img src="" alt="">
-                    </a>
+                    <a href="">Member Benefits</a>
+                    <a href="">Gifts</a>
+                    <a href="">Pick Up E-Card</a>
+                    <a href="">About Us</a>
                 </section>
                 <section>
-                    <a href="">
-                        <img src="" alt="">
-                    </a>
+                    <a href="">My Account</a>
+                    <a href="">Personal Information</a>
+                    <a href="">Contacts & Reminders</a>
+                    <a href="">Feedback</a>
+                    <a href="">FAQs</a>
+                    <a href="">Contact Us</a>
                 </section>
                 <section>
+                    <a href="">Terms of Service</a>
+                    <a href="">Email Protection</a>
+                    <a href="">Accessibility</a>
+                    <a href="">Policies</a>
+                    <a href="">Do Not Sell or Share My Personal Information</a>
+                </section>
+            </article>            
+            <article id="social-links">
+                <section class="backBox">
                     <a href="">
-                        <img src="" alt="">
+                        <img src="Assets/icons/App Store Icon.svg" alt="Apple store download logo">
                     </a>
                 </section>
-                <section>
+                <section class="backBox">
                     <a href="">
-                        <img src="" alt="">
+                        <img src="Assets/icons/Google Play Icon.svg" alt="Google Play download logo">
+                    </a>
+                </section>
+                <section class="backBox">
+                    <a href="">
+                        <img src="Assets/icons/Facebook icon.svg" alt="Facebook logo">
+                    </a>
+                </section>
+                <section class="backBox">
+                    <a href="">
+                        <img src="Assets/icons/Pinterest Icon.svg" alt="Pinterest logo">
                     </a>
                 </section>
             </article>

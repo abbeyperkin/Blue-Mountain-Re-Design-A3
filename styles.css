@@ -10,10 +10,30 @@
 body{
     padding: 5px;
     font-family: 'Keep Calm';
+    background-color: #f6fafa;
 }
 
 h1, h2, h3, h4{
     font-weight: lighter;
+}
+
+.backBox{
+    background-color: #CFDFE8;
+    border: 2.5px solid black;
+    border-radius: 25px;
+    margin-bottom: 12px;
+}
+
+.mainButton{
+    background-color: #7AA4D6;
+    border: 2.5px solid black;
+    border-radius: 20px;
+    padding-inline: 32px;
+    padding-block: 13px; 
+    box-shadow: 4px 4px;
+    font-family: 'Keep Calm';
+    font-size: large;
+    margin-bottom: 11px;
 }
 
 header{
@@ -25,7 +45,7 @@ header{
 }
 
 .hamburger{
-    height: 40px;
+    height: 37px;
     width: 45px;
     display: flex;
     flex-direction: column;
@@ -37,8 +57,8 @@ header{
 
 .hamburger span{
     background-color: black;
-    width: 33px;
-    height: 3px;
+    width: 32px;
+    height: 3.5px;
     display: block;
     border-radius: 25px;
 }
@@ -54,13 +74,6 @@ header{
 
 #search-icon img{
     height: 29px;
-}
-
-.backBox{
-    background-color: #CFDFE8;
-    border: 3px solid black;
-    border-radius: 25px;
-    margin-bottom: 12px;
 }
 
 #heroSection{
@@ -146,18 +159,6 @@ header{
     left: 74%;    
 }
 
-.mainButton{
-    background-color: #7AA4D6;
-    border: 3px solid black;
-    border-radius: 20px;
-    padding-inline: 32px;
-    padding-block: 13px; 
-    box-shadow: 5px 5px;
-    font-family: 'Keep Calm';
-    font-size: large;
-    margin-bottom: 11px;
-}
-
 #popular-categories-header{
     padding-block: 8px;
     padding-inline: 18px;
@@ -185,6 +186,82 @@ header{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 11px;
+}
+
+#latest-additions {
+    overflow-x: scroll;
+    position: relative;
+    padding-top: 0px;
+    width: 100%;
+    height: auto;
+}
+
+#latest-additions h2 {
+    position: sticky;
+    top: 0;
+    margin-top: 10px;
+    left: 18px;
+    font-size: larger;
+    z-index: 1;
+}
+
+.card-carousel {
+    display: flex;
+    width: 147%;
+    overflow-x: auto;
+    justify-content: space-evenly;
+}
+
+.product-window{
+    position: relative;
+    height: 243px;
+    width: 156px;
+    background-color: #f6fafa;
+    border: 2.5px solid black;
+    border-radius: 25px;
+    margin-bottom: 12px;
+}
+
+.product-window section{
+    height: 85%;
+    width: 100%;
+    background-color: #f6fafa;
+    border-bottom: 2.5px solid black;
+    border-radius: 25px;
+}
+
+.card-img{
+    position: absolute;
+    z-index: 1;
+    height: auto;
+    width: 120px;
+    top: 44px;
+    left: 0;
+}
+
+.envelope-img{
+    position: absolute;
+    top: -5px;
+    left: 10px;
+}
+
+.product-window h3{
+    margin: 0;
+    margin-top: 8px;
+    font-size: 11px;
+    text-align: center;
+}
+
+#smh-background{
+    background-color: #DADCB7;
+}
+
+#mfy-background{
+    background-color: #EFE0C0;
+}
+
+#lgw-background{
+    background-color: #D1C694;    
 }
 
 #send-a-gift{

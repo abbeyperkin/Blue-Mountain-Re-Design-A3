@@ -114,23 +114,6 @@
     column-gap: 11px;
 }
 
-#latest-additions {
-    overflow-x: scroll;
-    position: relative;
-    padding-top: 0px;
-    width: 100%;
-    height: auto;
-}
-
-#latest-additions h2 {
-    position: sticky;
-    top: 0;
-    margin-top: 10px;
-    left: 18px;
-    font-size: larger;
-    z-index: 1;
-}
-
 #send-a-gift{
     display: flex;
     flex-direction: column;
@@ -165,35 +148,9 @@
     margin: 0;
 }
 
-#member-section{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    padding: 10px 18px;
-    margin-top: 0;
-}
-
-#member-section h2{
-    top: 0;
-    margin-bottom: 0;
-    margin-top: 0;
-    left: 18px;
-    font-size: larger;
-}
-
-#member-section p{
-    font-size: 12px;
-    max-width: 400px;
-}
-
 #member-section-right-align{
     text-align: right;
     align-self: flex-end;
-}
-
-#member-section section{
-    display: flex;
-    align-items: center;
 }
 
 #member-section img{
@@ -202,38 +159,4 @@
 
 #member-section #clock-img{
     margin-inline: 10px;
-}
-
-#email-section{
-    align-self: center;
-    margin-top: 9px;
-    margin-bottom: 7px;
-    width: 300px;
-    outline: none;
-}
-
-#email-input{
-    background-color: #f6fafa;
-    border: 2.5px solid black;
-    border-radius: 25px 0px 0px 25px;
-    height: 25px;
-    box-shadow: 0px 3px;
-    border-right: none;
-    width: 300px;
-    padding-left: 13px;
-    font-family: 'Keep Calm';
-    font-size: 12px;
-    font-weight: 100;
-}
-
-#email-sign-up-button{
-    height: 32px;
-    box-shadow: 3px 3px;
-    width: 100px;
-    padding: 5px;
-    font-size: 12px;
-    margin-bottom: 0;
-    margin-left: -20px;
-    outline: none;
-    /* TODO: get rid of outline */
 }

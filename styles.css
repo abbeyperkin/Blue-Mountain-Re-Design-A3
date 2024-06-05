@@ -292,11 +292,11 @@ header{
 }
 
 #date-scroll{
-    font-size: larger;
+    font-size: large;
     text-wrap: nowrap;
     overflow-x: scroll;
     margin-bottom: 12px;
-    padding-block: 8px;
+    padding-block: 6px;
 }
 
 #date-scroll h2{
@@ -393,4 +393,22 @@ header{
 
 #footer-links a:hover{
     color: rgba(0, 0, 0, 0.654);
+}
+
+#social-links{
+    display: flex;
+    justify-content: space-evenly;
+    width: 103%;
+    margin-left: -2%;
+    margin-bottom: 0;
+}
+
+#social-links section{
+    min-width: 35px;
+    padding: 5px 10px;
+    padding-top: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
 }

@@ -7,10 +7,15 @@
     font-display: swap;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 body{
     padding: 5px;
     font-family: 'Keep Calm';
     background-color: #f6fafa;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4{
@@ -284,4 +289,16 @@ header{
     width: 265px;
     margin: 0;
     margin-bottom: 12px;
+}
+
+#date-scroll{
+    font-size: larger;
+    text-wrap: nowrap;
+    overflow-x: scroll;
+    margin-bottom: 12px;
+    padding-block: 8px;
+}
+
+#date-scroll h2{
+    margin: 0;
 }

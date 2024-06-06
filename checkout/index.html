@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="../styles.css">
-        <base href="/Blue-Mountain-Re-Design-A3/">
+        <link rel="stylesheet" href="checkout.css">
+        <!-- <base href="/Blue-Mountain-Re-Design-A3/"> -->
     </head>
 
     <body>
@@ -22,101 +23,111 @@
             <button class="header-button"><img src="../Assets/icons/Bag Icon.svg" alt="Bag icon"></button>
         </header>
 
-        <section>
+        <section id="checkout-header">
             <h2>Checkout</h2>
         </section>
 
-        <article class="back-box">
-            <section>
-                <h3>Show Order Summary</h3>
-                <button>V</button>
-            </section>
-            
-            <section>
+        <article id="checkout-container" class="back-box">
+            <section class="inner-box">
                 <h2>Contact</h2>
-                <input type="email" placeholder="Enter your email">
+                <input class="last-input" type="email" placeholder="Enter your email">
             </section>
 
-            <section>
+            <section class="inner-box">
                 <h2>Payment</h2>
                 <input type="number" placeholder="Card number">
-                <section>
+                <section class="horiz-input">
                     <input type="text" placeholder="Expiry (MM/YY)">
                     <!-- TODO: Add tooltip for CVV -->
                     <input type="number" placeholder="CVV">
                 </section>
-                <input type="text" placeholder="Name on Card">
+                <input class="last-input" type="text" placeholder="Name on Card">
             </section>
 
-            <section>
+            <section class="inner-box">
                 <h2>Billing Address</h2>
                 <!-- TODO: Reconsider adding country options -->
                 <input type="text" placeholder="Country or Region">  
-                <section>
+
+                <section class="horiz-input">
                     <input type="text" placeholder="First name">
                     <input type="text" placeholder="Last Name">
                 </section>
-                <section>
+
+                <section id="address-section">
                     <input type="text" placeholder="Address"> 
-                    <!-- TODO: Search icon SVG -->
-                    <img src="" alt="">    
+                    <img id="address-search-icon" src="../Assets/icons/Small Search Icon.svg" alt="">    
                 </section>   
+
                 <input type="text" placeholder="Apartment, unit, suite, e.g. (optional)">  
+
                 <input type="text" placeholder="City">       
-                <section>
-                    <section>
-                        <input type="text" placeholder="State">
-                        <button>V</button>
-                    </section>
+
+                <section class="horiz-input">
+                    <select>
+                        <option value="na" selected>State</option>
+                        <option value="victoria">Victoria</option>
+                        <option value="queensland">Queensland</option>
+                        <option value="new south wales">New South Wales</option>
+                        <option value="western australia">Western Australia</option>
+                        <option value="northern territory">Northern Territory</option>
+                        <option value="ACT">ACT</option>
+                        <option value="tasmania">Tasmania</option>
+                    </select>
                     <input type="text" placeholder="Postcode">
                 </section> 
-                <input type="number" placeholder="Phone (optional)">
+
+                <input class="last-input" type="number" placeholder="Phone (optional)">
             </section>
 
-            <section>
+            <section class="inner-box">
                 <h2>Order Summary</h2>
-                <section>
-                    <!-- TODO: Add card pics -->
-                    <img src="" alt="">
-                    <section>
-                        <p><b>More Friend Years</b></p>
-                        <p>Animated Creatacard™</p>
+                <a href="product">
+                    <section class="order-sum-item">
+                        <img src="../Assets/cards/Friend years GIF 1.svg" alt="">
+                        <section>
+                            <p><b>More Friend Years</b></p>
+                            <p>Animated Creatacard™</p>
+                        </section>
+                        <h3>$2.95</h3>
                     </section>
-                    <h3>$2.95</h3>
-                </section>
-                
-                <section>
-                    <!-- TODO: Add card pics -->
-                    <img src="" alt="">
-                    <section>
-                        <p><b>So Much Happiness</b></p>
-                        <p>Animated Creatacard™</p>
+                </a>
+
+                <a href="product">
+                    <section class="order-sum-item">
+                        <img src="../Assets/cards/So much happiness GIF 1.svg" alt="">
+                        <section>
+                            <p><b>So Much Happiness</b></p>
+                            <p>Animated Creatacard™</p>
+                        </section>
+                        <h3>$1.95</h3>
                     </section>
-                    <h3>$1.95</h3>
+                </a>
+                <!-- FIXME alignment off-->
+                <section class="discount-section">
+                    <section id="email-section" style="outline: none;">
+                        <input id="email-input" type="text" placeholder="Discount code">
+                        <button id="email-sign-up-button" class="main-button">Apply</button>
+                    </section>
                 </section>
 
-                <section>
-                    <input type="text" placeholder="Discount code">
-                    <button>Apply</button>
-                </section>
-
-                <section>
+                <section id="subtotal">
                     <h3>Subtotal</h3>
                     <h3>$4.90</h3>
                 </section>
-                <section>
-                    <h2>Total</h2>
-                    <h2>$4.90</h2>
+
+                <section id="total">
+                    <h3><b>Total</b></h3>
+                    <h3><b>$4.90</b></h3>
                 </section>
-                <a href="confirmation"><button class="main-button">Submit Order</button></a>
+                <a href="confirmation"><button id="submit-order-button" class="main-button">Submit Order</button></a>
             </section>
         </article>
 
-        <footer class="back-box">
+        <footer id="checkout-footer" class="back-box">
             <a href="">Privacy Policy</a>
             <a href="">Refund Policy</a>
             <a href="">Terms of Service</a>
-            <a href="">Contact Information</a>
         </footer>
 
     </body>

@@ -62,12 +62,13 @@
 }
 
 #cover-verse, #inside-verse{
-    margin-bottom: 7px;
+    margin-bottom: 0px;
 }
 
 #purchase-info-container{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 5px;
 }
 
 #purchase-info-container h2{
@@ -77,15 +78,18 @@
 #gift{
     display: flex;
     align-items: center;
+    margin-bottom: 11px;
 }
 
 #gift img{
-    width: 30px;
+    width: 27px;
     margin-left: 10px;
+    margin-right: 10px;
 }
 
 #gift p{
     margin: 0;
+    font-size: medium;
 }
 
 #add-to-bag{

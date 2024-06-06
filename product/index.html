@@ -6,7 +6,7 @@
         <title>More Friend Years Card | Blue Mountain</title>
         <link rel="stylesheet" href="../styles.css">
         <link rel="stylesheet" href="product.css">
-        <base href="/Blue-Mountain-Re-Design-A3/">
+        <!-- <base href="/Blue-Mountain-Re-Design-A3/"> -->
     </head>
 
     <body>
@@ -32,30 +32,31 @@
             <img id="product-card" src="../Assets/cards/Friend years GIF.gif" alt="">
         </section>
 
-        <article class="back-box">
+        <article id="product-info-container" class="back-box">
             <h2>More Friend Years</h2>
 
-            <article>
-                <section>
-                    <p><b>Cover Verse</b></p>
+            <article id="product-info">
+                <section id="cover-verse">
+                    <p class="info-subheading"><b>Cover Verse</b></p>
                     <p>“If getting older means racking up more friend years together, I'll take it.”</p>
                 </section>
 
-                <section>
-                    <p><b>Inside Verse</b></p>
+                <section id="inside-verse">
+                    <p class="info-subheading"><b>Inside Verse</b></p>
                     <p>“Happy Birthday”</p>
                 </section>
             </article>
 
-            <section>
+            <section id="purchase-info-container">
                 <h2>$2.95</h2>
-                <section>
+
+                <section id="gift">
                     <p>Attach a Gift</p>
-                    <!-- TODO: Add present icon -->
-                    <img src="" alt="">
+                    <img src="../Assets/icons/Gift icon.svg" alt="">
                 </section>
+
             </section>
-            <a href="checkout"><button class="main-button">Add to Bag</button></a>
+            <a href="checkout"><button id="add-to-bag" class="main-button">Add to Bag</button></a>
         </article>
 
         <section id="product-display-carousel" class="back-box">
@@ -91,7 +92,7 @@
             </article>
         </section>
 
-        <section id="member-section" class="back-box">
+        <section id="small-member" class="back-box member-section">
             <h2>Become a Member</h2>
             <p>Save money by cutting one-time costs with our subscription service!</p>
             <section id="email-section">

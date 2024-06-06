@@ -164,7 +164,7 @@ header{
     background-color: #D1C694;    
 }
 
-#member-section{
+.member-section{
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -172,7 +172,7 @@ header{
     margin-top: 0;
 }
 
-#member-section h2{
+.member-section h2{
     top: 0;
     margin-bottom: 0;
     margin-top: 0;
@@ -180,12 +180,12 @@ header{
     font-size: larger;
 }
 
-#member-section p{
+.member-section p{
     font-size: 12px;
     max-width: 400px;
 }
 
-#member-section section{
+.member-section section{
     display: flex;
     align-items: center;
 }

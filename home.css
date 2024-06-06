@@ -148,15 +148,15 @@
     margin: 0;
 }
 
-#member-section-right-align{
+.member-section-right-align{
     text-align: right;
     align-self: flex-end;
 }
 
-#member-section img{
+.member-section img{
     margin-inline: 8px;
 }
 
-#member-section #clock-img{
+.member-section #clock-img{
     margin-inline: 10px;
 }

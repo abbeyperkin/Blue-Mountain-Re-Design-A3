@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-block: 12px;
 }
 
 .results-header p{
@@ -23,10 +24,16 @@
     display: flex;
     justify-content: space-between;
     padding: 0px 18px;
+    font-size: 13px;
+    margin-bottom: 25px;
 }
 
 #filter-result-box section{
     display: flex;
+}
+
+#filters, #results-counter{
+    margin-block: 8px;
 }
 
 #results-counter{
@@ -53,6 +60,7 @@
 
 .result{
     background-color: #CFDFE8;
+    margin-bottom: 25px;
 }
 
 #page-counter{
@@ -72,3 +80,15 @@
     border: 2px solid black;
     border-radius: 50%;
 }
+
+@media only screen and (min-width: 660px) {
+    #results-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    #results-grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+  }

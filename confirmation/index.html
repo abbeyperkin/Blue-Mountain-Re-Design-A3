@@ -5,26 +5,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Order Confirmed! | Blue Mountain</title>
         <link rel="stylesheet" href="../styles.css">
-        <base href="/Blue-Mountain-Re-Design-A3/">
+        <link rel="stylesheet" href="confirmation.css">
+        <!-- <base href="/Blue-Mountain-Re-Design-A3/"> -->
     </head>
 
     <body>
-        <article class="back-box">
-            <a href=".">x</a>
+        <article id="confirmation-box" class="back-box">
+            
+            <a id="close-button" href="."><img src="../Assets/icons/Exit icon.svg" alt=""></a>
+            
             <h2>Order Confirmed!</h2>
 
-            <img src="../Assets/icons/Envelope Confirm.svg" alt="Envelope confirmation">
+            <img src="../Assets/icons/Envelope confirmation icon.svg" alt="Envelope confirmation">
 
             <p>Thank you for shopping with Blue Mountain! A confirmation email has been sent to your inbox.</p>
             
-            <article>
-                <section>
-                    <h3>$4.90</h3>
+            <article id="amount-delivery-section">
+                <section id="amount-section">
+                    <h3><b>$4.90</b></h3>
                     <p>Total Amount</p>
                 </section>
                 
-                <section>
-                    <h3>Instant Delivery</h3>
+                <section id="delivery-section">
+                    <h3><b>Instant Delivery</b></h3>
                     <p>Cards direct to inbox</p>
                 </section>
             </article>
@@ -32,6 +35,5 @@
             <a href="."><button class="main-button">Continue Shopping</button></a>
 
         </article>
-
     </body>
 </html>

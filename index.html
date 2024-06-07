@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
     <!-- TODO: Make page NAV work -->
+    <!-- TODO: Add a favicon -->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Blue Mountain</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="home.css">
-        <base href="/Blue-Mountain-Re-Design-A3/">
+        <base href="/">
     </head>
 
     <body>
         <header class="back-box"> 
-            <button class="hamburger">
+            <button onclick="openMenu()" class="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -20,31 +21,32 @@
             <a href=".">
                 <img width="170" src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/Blue Mountain logo new.png" alt="Blue Mountain logo">
             </a>
-            <button class="header-button" id="search-icon"><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Search Icon.svg" alt="Search icon"></button>
+            <button onclick="openSearchMenu()" class="header-button" id="search-icon"><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Search Icon.svg" alt="Search icon"></button>
             <button class="header-button"><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Bag Icon.svg" alt="Bag icon"></button>
         </header>
 
-        <section class="back-box" style="display: none;">
-            <button>x</button>
+        <div id="modal-background" onclick="closeAllMenus()" class="close-menu"></div>
 
-            <h2>Menu</h2>
+        <aside id="sidebar" class="back-box close-menu">
+            
+            <button class="sidebar-exit-button" onclick="closeMenu()"><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Exit icon.svg" alt=""></button>
 
-            <section>
+            <section class="menu-item-expand">
                 <h4>E-Cards</h4>
                 <h4>+</h4>
             </section> 
 
-            <section>
+            <section class="menu-item-expand">
                 <h4>SmashUps™</h4>
                 <h4>+</h4>
             </section>
 
-            <section>
+            <section class="menu-item-expand">
                 <h4>Creatacards™</h4>
                 <h4>+</h4>
             </section>
 
-            <section>
+            <section> 
                 <h4>View Postcards</h4>
             </section>
             
@@ -68,10 +70,32 @@
                 <h4>Member Benefits</h4>
             </section>
 
-            <section>
-                <button>Sign In</button>
-                <button>Sign Up</button>
+            <section id="sidebar-buttons-section">
+                <button class="main-button sidebar-sign-button">Sign In</button>
+                <button class="main-button sidebar-sign-button">Sign Up</button>
             </section>
+        </aside>
+
+        <section id="search-menu" class="close-menu back-box">
+            <section>
+                <input type="text">
+                <button class="main-button"><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Search Icon searchbar.svg" alt=""></button>
+            </section>
+            
+            <h3>Top Categories</h3>
+
+            <ul>
+                <li>Birthday</li>
+                <li>Anniversary</li>
+                <li>Congrats</li>
+                <li>Thank You</li>
+                <li>Encourage</li>
+                <li>Get Well</li>
+                <li>Sympathy</li>
+                <li>Friendship</li>
+            </ul>
+
+            <button class="sidebar-exit-button" onclick="closeSearchMenu()"><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Exit icon.svg" alt=""></button>
         </section>
 
         <section id="hero-section" class="back-box">
@@ -271,5 +295,8 @@
                 </section>
             </article>
         </footer>
+
+        <script src="navbar.js"></script>
+
     </body>
 </html>

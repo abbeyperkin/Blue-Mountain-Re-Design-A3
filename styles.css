@@ -18,6 +18,11 @@ body {
     background-color: #f6fafa;
     overflow-x: hidden;
 }
+/* TODO: Fix not-scrollable */
+.not-scrollable{
+    height: 98vh;
+    overflow: hidden;
+}
 
 h1, h2, h3, h4 {
     font-weight: lighter;
@@ -69,6 +74,84 @@ header {
     height: 3.5px;
     display: block;
     border-radius: 25px;
+}
+
+.close-menu {
+    display: none;
+}
+
+.open-menu {
+    display: block;
+}
+
+#modal-background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 101%;
+    height: 100%;
+    background-color: hsla(202, 24%, 28%, 0.567);
+    z-index: 2;
+}
+
+#sidebar {
+    z-index: 3;
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    width: 260px;
+    padding: 25px;
+    padding-top: 55px;
+}
+
+#sidebar h4 {
+    margin-block: 0px;
+}
+
+#sidebar section {
+    padding-block: 20px;
+}
+
+.sidebar-exit-button {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    top: 23.5px;
+    left: 24px;
+}
+
+.menu-item-expand {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2.5px solid rgba(0, 0, 0, 0.1);
+}
+
+.menu-item-expand:nth-child(4){
+    border-bottom: 2.5px solid rgba(0, 0, 0, 0.1);
+}
+
+#sidebar-buttons-section {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 12px;
+}
+
+#sidebar-buttons-section button {
+    font-size: 14px;
+    padding: 10px 25px;
+}
+
+#search-menu {
+    position: absolute;
+    z-index: 10;
+}
+
+#search-menu h3 {
+
+}
+
+#search-menu ul {
+    list-style-type: none;
 }
 
 .header-button {

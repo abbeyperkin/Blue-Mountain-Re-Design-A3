@@ -49,6 +49,9 @@ function closeMenu() {
 
 function openSearchMenu() {
     const searchMenu = document.getElementById("search-menu");
+    const searchBar = document.getElementById('search-bar-input')
+
+    searchBar.focus();
 
     openModalBackground();
 

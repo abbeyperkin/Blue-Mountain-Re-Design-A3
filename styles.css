@@ -1,7 +1,7 @@
-@font-face  {
-    font-family: 'Keep Calm';
-    src: url('./Assets/font/KeepCalm-Medium.woff2') format('woff2'),
-        url('./Assets/font/KeepCalm-Medium.woff') format('woff');
+@font-face {
+    font-family: "Keep Calm";
+    src: url("./Assets/font/KeepCalm-Medium.woff2") format("woff2"),
+        url("./Assets/font/KeepCalm-Medium.woff") format("woff");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -14,22 +14,25 @@ html {
 body {
     align-items: center;
     padding: 5px;
-    font-family: 'Keep Calm';
+    font-family: "Keep Calm";
     background-color: #f6fafa;
     overflow-x: hidden;
 }
 /* TODO: Fix not-scrollable */
-.not-scrollable{
+.not-scrollable {
     height: 98vh;
     overflow: hidden;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-weight: lighter;
 }
 
 .back-box {
-    background-color: #CFDFE8;
+    background-color: #cfdfe8;
     border: 2.5px solid black;
     border-radius: 25px;
     margin-bottom: 12px;
@@ -38,13 +41,13 @@ h1, h2, h3, h4 {
 
 .main-button {
     color: black;
-    background-color: #7AA4D6;
+    background-color: #7aa4d6;
     border: 2.5px solid black;
     border-radius: 20px;
     padding-inline: 32px;
-    padding-block: 13px; 
+    padding-block: 13px;
     box-shadow: 4px 4px;
-    font-family: 'Keep Calm';
+    font-family: "Keep Calm";
     font-size: large;
     margin-bottom: 11px;
 }
@@ -126,7 +129,7 @@ header {
     border-top: 2.5px solid rgba(0, 0, 0, 0.1);
 }
 
-.menu-item-expand:nth-child(4){
+.menu-item-expand:nth-child(4) {
     border-bottom: 2.5px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -142,16 +145,59 @@ header {
 }
 
 #search-menu {
+    padding: 15px;
     position: absolute;
+    top: 13px;
     z-index: 10;
+    width: 329px;
 }
 
 #search-menu h3 {
+    font-size: 16px;
+}
 
+.right-aligned {
+    left: auto;
+    right: 13px;
+    top: 25px;
+}
+
+#search-menu ul, #search-menu h3 {
+    padding-left: 16px;
 }
 
 #search-menu ul {
     list-style-type: none;
+}
+
+#search-menu li {
+    font-size: 15px;
+    padding-block: 10px;
+}
+
+#search-bar-input {
+    background-color: #f6fafa;
+    border: 2.5px solid black;
+    border-radius: 25px 0px 0px 25px;
+    height: 42px;
+    box-shadow: 0px 4px;
+    border-right: none;
+    width: 235px;
+    padding-left: 13px;
+    font-family: "Keep Calm";
+    font-size: 12px;
+    font-weight: 100;
+    margin-top: -2px;
+}
+
+#search-bar{
+    display: flex;
+}
+
+#search-button {
+    padding: 5px 12px;
+    margin-top: -2px;
+    margin-left: -21px;
 }
 
 .header-button {
@@ -163,11 +209,11 @@ header {
     margin-right: -10px;
 }
 
-#search-icon img {
+#search-icon img, #search-bar img {
     height: 29px;
 }
 
-#product-display-carousel  {
+#product-display-carousel {
     overflow-x: scroll;
     position: relative;
     padding-top: 0px;
@@ -175,7 +221,7 @@ header {
     height: auto;
 }
 
-#product-display-carousel h2  {
+#product-display-carousel h2 {
     position: sticky;
     top: 0;
     margin-top: 10px;
@@ -184,7 +230,7 @@ header {
     z-index: 1;
 }
 
-.card-carousel  {
+.card-carousel {
     display: flex;
     width: 147%;
     max-width: 1100px;
@@ -236,15 +282,15 @@ header {
 }
 
 #smh-background {
-    background-color: #DADCB7;
+    background-color: #dadcb7;
 }
 
 #mfy-background {
-    background-color: #EFE0C0;
+    background-color: #efe0c0;
 }
 
 #lgw-background {
-    background-color: #D1C694;    
+    background-color: #d1c694;
 }
 
 .member-section {
@@ -290,7 +336,7 @@ header {
     border-right: none;
     width: 300px;
     padding-left: 13px;
-    font-family: 'Keep Calm';
+    font-family: "Keep Calm";
     font-size: 12px;
     font-weight: 100;
 }

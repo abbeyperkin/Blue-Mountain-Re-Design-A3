@@ -100,3 +100,21 @@ function closeSuperMenu() {
     superMenu.classList.add("close-menu")
 
 }
+
+// TODO: cite https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion
+var accordion = document.getElementById("accordion").childNodes;
+console.log(accordion)
+var i;
+for (i = 1; i < accordion.length; i+=2) {
+    console.log('accordion[i]', accordion[i].classList)
+    accordion[i].addEventListener("click", function() {
+        console.log("CLICKED")
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "flex") {
+        panel.style.display = "none";
+        } else {
+        panel.style.display = "flex";
+        }
+    });
+}

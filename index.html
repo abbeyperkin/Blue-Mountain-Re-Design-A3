@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- TODO: Make page NAV work -->
-    <!-- TODO: Add a favicon -->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -112,21 +110,47 @@
         <aside id="sidebar" class="back-box close-menu">
             
             <button class="sidebar-exit-button" onclick="closeMenu()"><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Exit icon.svg" alt=""></button>
+            
+            <div id="accordion">
+                <section class="menu-item-expand">
+                    <h4>E-Cards</h4>
+                    <h4>+</h4>
+                </section> 
 
-            <section class="menu-item-expand">
-                <h4>E-Cards</h4>
-                <h4>+</h4>
-            </section> 
+                <section class="panel">
+                    <a href="/results">Anniversary</a>
+                    <a href="/results">Birthday</a>
+                    <a href="/results">Congratulations</a>
+                    <a href="/results">Encouragement</a>
+                    <a href="/results">Friendship</a>
+                </section>
+    
+                <section class="menu-item-expand">
+                    <h4>SmashUps™</h4>
+                    <h4>+</h4>
+                </section>
 
-            <section class="menu-item-expand">
-                <h4>SmashUps™</h4>
-                <h4>+</h4>
-            </section>
+                <section class="panel">
+                    <a href="/results">Anniversary</a>
+                    <a href="/results">Birthday</a>
+                    <a href="/results">Congratulations</a>
+                    <a href="/results">Friendship</a>
+                    <a href="/results">Graduation</a>
+                </section>
+    
+                <section class="menu-item-expand">
+                    <h4>Creatacards™</h4>
+                    <h4>+</h4>
+                </section>
 
-            <section class="menu-item-expand">
-                <h4>Creatacards™</h4>
-                <h4>+</h4>
-            </section>
+                <section class="panel">
+                    <a href="/results">Anniversary</a>
+                    <a href="/results">Baby</a>
+                    <a href="/results">Birthday</a>
+                    <a href="/results">Congratulations</a>
+                    <a href="/results">Encouragement</a>
+                </section>
+            </div>
 
             <section> 
                 <h4>View Postcards</h4>
@@ -265,11 +289,10 @@
                 <img id="circle" class="hero-text" src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/circle.svg" alt="Circle doodle">
                 <h1 id="for" class="hero-text">for</h1>
             </section>
-            <!-- TODO: fix resolution -->
             
             <section id="hero-envelope">
                 <img id="hero-envelope-back" src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/Hero envelope full.png" alt="">
-                <img id="hero-card" src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/Hero card.png" alt="">
+                <img id="hero-card" src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/cards/A Million Reasons card.svg" alt="">
                 <img id="hero-envelope-fore" src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/Hero envelope foreground.png" alt=""> 
             </section>
             
@@ -281,7 +304,7 @@
                 <img id="paper-plane" class="hero-text" src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Paper plane.svg" alt="Paper plane doodle">
                 <h1 id="occasion" class="hero-text">occasion</h1>
             </section>
-            <button class="main-button">Shop Now</button>
+            <a href="results"><button class="main-button">Shop Now</button></a>
         </section>
 
         <article>
@@ -290,49 +313,49 @@
                 <p>For every celebration on the calendar and the special moments in between, we make it easy to find ecards that keep you connected.</p>
             </section>
             <article id="categories-container">
-                <a href="results">
+                <a href="results/?search=Birthday">
                     <section class="back-box category">
                         <h3>Birthday</h3>
                         <img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Membership Icon + Caption 8.svg" alt="">
                     </section>
                 </a>
-                <a href="results">
+                <a href="results/?search=Anniversary">
                     <section class="back-box category">
                         <h3>Anniversary</h3>
                         <img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Layer_1-3.svg" alt="">
                     </section>
                 </a>
-                <a id="congrats-icon" href="results">
+                <a id="congrats-/?search=Congratsicon" href="results">
                     <section class="back-box category">
                         <h3>Congrats</h3>
                         <img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Layer_1.svg" alt="">
                     </section>
                 </a>
-                <a href="results">
+                <a href="results/?search=Thank-You">
                     <section class="back-box category">
                         <h3>Thank You</h3>
                         <img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Thank you icon.svg" alt="">
                     </section>
                 </a>
-                <a href="results">
+                <a href="results/?search=Encourage">
                     <section class="back-box category">
                         <h3>Encourage</h3>
                         <img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Vector.svg " alt="">
                     </section>
                 </a>
-                <a href="results">
+                <a href="results/?search=Get-Well">
                     <section class="back-box category">
                         <h3>Get Well</h3>
                         <img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Get well icon.svg" alt="bandaid">
                     </section>
                 </a>
-                <a href="results">
+                <a href="results/?search=Sympathy">
                     <section class="back-box category">
                         <h3>Sympathy</h3>
                         <img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Layer_1-1.svg" alt="">
                     </section>
                 </a>
-                <a href="results">
+                <a href="results/?search=Friendship">
                     <section class="back-box category">
                         <h3>Friendship</h3>
                         <img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Layer_1-2.svg" alt="">

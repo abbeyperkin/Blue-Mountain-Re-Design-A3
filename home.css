@@ -23,7 +23,9 @@
 }
 
 #hero-card {
-    margin-left: 10%;
+    scale: 0.8;
+    margin-left: -13px;
+    margin-bottom: -40px;
 }
 
 .doodle-text-container {
@@ -188,16 +190,13 @@
         
     }
 
-    #hero-envelope img {
+    #hero-envelope {
         scale: 1.6
     }
 
-    #hero-envelope-fore {
-        margin-bottom: -20px;
-    }
-
     #hero-card {
-        margin-bottom: 10px;
+        margin-bottom: -30px;
+        scale: 0.8;
     }
 
     #sparkle,

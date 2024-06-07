@@ -6,7 +6,7 @@
         <title>Birthday Cards | Blue Mountain</title>
         <link rel="stylesheet" href="../styles.css">
         <link rel="stylesheet" href="results.css">
-        <base href="/Blue-Mountain-Re-Design-A3/">
+        <!-- <base href="/Blue-Mountain-Re-Design-A3/"> -->
     </head>
 
     <body>
@@ -110,17 +110,17 @@
             
             <button class="sidebar-exit-button" onclick="closeMenu()"><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Exit icon.svg" alt=""></button>
 
-            <section class="menu-item-expand">
+            <button class="menu-item-expand">
                 <h4>E-Cards</h4>
                 <h4>+</h4>
             </section> 
 
-            <section class="menu-item-expand">
+            <button class="menu-item-expand">
                 <h4>SmashUps™</h4>
                 <h4>+</h4>
             </section>
 
-            <section class="menu-item-expand">
+            <button class="menu-item-expand">
                 <h4>Creatacards™</h4>
                 <h4>+</h4>
             </section>
@@ -160,7 +160,9 @@
             
             <section id="search-bar">
                 <input id="search-bar-input" type="text" placeholder="Search" autofocus>
-                <button id="search-button" class="main-button"><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Search Icon searchbar.svg" alt=""></button>
+                <a href="results">
+                    <button id="search-button" class="main-button"><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Search Icon searchbar.svg" alt=""></button>
+                </a>
             </section>
             
             <h3><b>Top Categories</b></h3>
@@ -232,153 +234,6 @@
                             <button><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Minus Icon.svg" alt=""></button>
                             <p>1</p>
                             <button><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Plus Icon.svg" alt=""></button>
-                        </section>
-
-                        <p class="price">$1.95</p>
-
-                    </section>
-                </article>
-            </section>
-
-            <section id="shopping-bag-total">
-                <p>Total</p>
-                <p>$3.90</p>
-            </section>
-
-            <a href="checkout">
-                <button id="go-to-checkout-button" class="main-button">Go to Checkout</button>
-            </a>
-
-        </section>
-
-        <div id="modal-background" onclick="closeAllMenus()" class="close-menu"></div>
-
-        <aside id="sidebar" class="back-box close-menu">
-            
-            <button class="sidebar-exit-button" onclick="closeMenu()"><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Exit icon.svg" alt=""></button>
-
-            <section class="menu-item-expand">
-                <h4>E-Cards</h4>
-                <h4>+</h4>
-            </section> 
-
-            <section class="menu-item-expand">
-                <h4>SmashUps™</h4>
-                <h4>+</h4>
-            </section>
-
-            <section class="menu-item-expand">
-                <h4>Creatacards™</h4>
-                <h4>+</h4>
-            </section>
-
-            <section> 
-                <h4>View Postcards</h4>
-            </section>
-            
-            <section>
-                <h4>Celebrate Today</h4>
-            </section>
-
-            <section>
-                <h4>Gift Cards</h4>
-            </section>
-
-            <section>
-                <h4>App</h4>
-            </section>
-
-            <section>
-                <h4>Reminders</h4>
-            </section>
-
-            <section>
-                <h4>Member Benefits</h4>
-            </section>
-
-            <section id="sidebar-buttons-section">
-                <button class="main-button sidebar-sign-button">Sign In</button>
-                <button class="main-button sidebar-sign-button">Sign Up</button>
-            </section>
-        </aside>
-
-        <section id="search-menu" class="close-menu back-box">
-            <button class="sidebar-exit-button right-aligned" onclick="closeSearchMenu()"><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Exit icon.svg" alt=""></button>
-            
-            <section id="search-bar">
-                <input id="search-bar-input" type="text" placeholder="Search">
-                <button id="search-button" class="main-button"><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Search Icon searchbar.svg" alt=""></button>
-            </section>
-            
-            <h3><b>Top Categories</b></h3>
-
-            <ul>
-                <li><a href="results">Birthday</a></li>
-                <li><a href="results">Anniversary</a></li>
-                <li><a href="results">Congrats</a></li>
-                <li><a href="results">Thank You</a></li>
-                <li><a href="results">Encourage</a></li>
-                <li><a href="results">Get Well</a></li>
-                <li><a href="results">Sympathy</a></li>
-                <li><a href="results">Friendship</a></li>
-            </ul>
-
-        </section>
-
-        <section id="shopping-bag" class="close-menu back-box">
-            <button class="sidebar-exit-button right-aligned" onclick="closeShoppingBag()"><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Exit icon.svg" alt=""></button>
-
-            <h3>Shopping Bag</h3>
-
-            <section id="items-section">
-                
-                <article class="item">
-                    <a href="product">
-                        <section id="mfy-background" class="thumbnail small-thumbnail">
-                            <img class="card-img" src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/cards/Friend years GIF 1.svg" alt="">
-                            <img class="envelope-img" src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/cards/Friend Years 1.svg" alt="">
-                        </section>
-                    </a>
-
-                    <a href="product">
-                        <section class="product-desc">
-                            <h4>More Friend Years</h4>
-                            <h5>Animated Creatacard™</h5>
-                        </section>
-                    </a>
-
-                    <section class="pricing-section">
-                        <section class="quantity-adjust">
-                            <button><img src="Assets/icons/Minus Icon.svg" alt=""></button>
-                            <p>1</p>
-                            <button><img src="Assets/icons/Plus Icon.svg" alt=""></button>
-                        </section>
-
-                        <p class="price">$1.95</p>
-
-                    </section>
-                </article>
-
-                <article class="item">
-                    <a href="product">
-                        <section id="smh-background" class="thumbnail small-thumbnail">
-                            <img class="card-img" src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/cards/So much happiness GIF 1.svg" alt="">
-                            <img class="envelope-img" src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/cards/So much happiness 1.svg" alt="">
-                        </section>
-                    </a>
-
-                    <a href="product">
-                        <section class="product-desc">
-                            <h4>So Much Happiness</h4>
-                            <h5>Animated Creatacard™</h5>
-                        </section>
-                    </a>
-
-                    <section class="pricing-section">
-                        <section class="quantity-adjust">
-                            <button><img src="Assets/icons/Minus Icon.svg" alt=""></button>
-                            <p>1</p>
-                            <button><img src="Assets/icons/Plus Icon.svg" alt=""></button>
                         </section>
 
                         <p class="price">$1.95</p>
@@ -400,7 +255,7 @@
 
         <section class="results-header">
             <p>Showing results for</p>
-            <h2>“Birthday”</h2>
+            <h2 id="searchQuery">“...”</h2>
         </section>
 
         <section id="filter-result-box" class="back-box">
@@ -409,8 +264,7 @@
                 <img src="" alt=""> 
                 <p id="filters">Filters</p>
             </section>
-            <!-- TODO: Number of results to be edited -->
-            <p id="results-counter">21 results</p>
+            <p id="results-counter">12 results</p>
         </section>
         <section id="results">
             <article id="results-grid">
@@ -595,6 +449,6 @@
         </footer>
 
         <script src="../navbar.js"></script>
-
+        <script src="search.js"></script>
     </body>
 </html>

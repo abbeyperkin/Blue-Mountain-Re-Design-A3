@@ -163,6 +163,20 @@ nav li{
     left: 24px;
 }
 
+#sidebar .panel.active {
+    display: flex;
+}
+
+#sidebar .panel {
+    display: none;
+    padding-top: 0;
+    flex-direction: column;
+}
+
+.panel a{
+    margin-top: 5px;
+}
+
 .menu-item-expand {
     display: flex;
     justify-content: space-between;
@@ -366,9 +380,8 @@ nav li{
 
 .card-carousel {
     display: flex;
-    width: 147%;
+    width: 250%;
     max-width: 1100px;
-    /* TODO: hide overflow when screen is wide enough */
     overflow-x: auto;
     justify-content: space-evenly;
 }
@@ -506,7 +519,6 @@ nav li{
     margin-bottom: 0;
     margin-left: -20px;
     outline: none;
-    /* TODO: get rid of outline */
 }
 
 /* FOOTER: */

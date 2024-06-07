@@ -103,3 +103,47 @@
     align-items: center;
     text-align: center;
 }
+
+@media only screen and (min-width: 800px){
+    #product-info-display {
+        display: flex;
+    }
+
+    .product-preview {
+        width: 600px;
+        margin-right: 13px;
+    }
+
+    #product-info-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #product-info-container h2 {
+        font-size: 34px;
+    }
+
+    #product-info-container p {
+        font-size: 22px;
+    }
+
+    #add-to-bag {
+        width: 50%;
+    }
+
+    #product-display-carousel h2,
+    #small-member h2 {
+        font-size: 24px;
+    }
+    #small-member {
+        width: calc(100% - 35px);
+    }
+
+    #small-member p{
+        font-size: 20px;
+    }
+
+    #email-section {
+        width: 400px;
+    }
+}

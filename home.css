@@ -1,4 +1,4 @@
-#hero-section{
+#hero-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,113 +8,113 @@
     height: 490px;
 }
 
-#hero-envelope{
+#hero-envelope {
     top: 24%;
     position: relative;
     height: 190px;
     width: 158px;
 }
 
-#hero-envelope img{
+#hero-envelope img {
     position: absolute;
     bottom: 0;
     left: 0;
     filter: drop-shadow(4px 4px 15px rgba(0, 0, 0, 0.151));
 }
 
-#hero-card{
+#hero-card {
     margin-left: 10%;
 }
 
-.doodle-text-container{
+.doodle-text-container {
     position: absolute;
 }
 
-.hero-text{
+.hero-text {
     position: absolute;
     font-size: 30px;
 }
 
-#sparkle{
+#sparkle {
     top: 6%;
     left: 53%;
 }
 
-#online{
+#online {
     top: 2%;
     left: 12%;
 }
 
-#e-cards{
+#e-cards {
     
     top: 8%;
     left: 28%;
 }
 
-#e-dash{
+#e-dash {
     top: 45px;
     left: -30px;
 }
-#circle-for{
+#circle-for {
     top: 10%;
     left: 67%;
 
 }
-#circle{
+#circle {
     top: 19px;
     left: -22px;
 }
 
-#every-underline{
+#every-underline {
     top: 60%;
     left: 21%;
 }
 
-#underline{
+#underline {
     top: 70px;
     left: -16px;
 }
 
-#plane-occasion{
+#plane-occasion {
 
     top: 68%;
     left: 45%;    
 }
 
-#paper-plane{
+#paper-plane {
     left: 115px;    
 }
 
-#popular-categories-header{
+#popular-categories-header {
     padding-block: 8px;
     padding-inline: 18px;
     height: fit-content;
     width: fit-content;
 }
 
-#popular-categories-header h2{
+#popular-categories-header h2 {
     margin: 0px;
     font-size: larger;
 }
 
-.category{
+.category {
     padding-block: 12px;
     padding-inline: 18px;
     height: 55px;
     font-size: 12px;
 }
 
-.category h3{
+.category h3 {
     margin: 0px;
 }
 
-#categories-container{
+#categories-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 11px;
 }
 
-#send-a-gift{
+#send-a-gift {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -123,20 +123,20 @@
     padding-inline: 30px
 }
 
-#send-a-gift h2{
+#send-a-gift h2 {
     font-size: larger;
     margin: 0;
     margin-bottom: 6px;
 }
 
-#send-a-gift p{
+#send-a-gift p {
     font-size: 12px;
     width: 265px;
     margin: 0;
     margin-bottom: 12px;
 }
 
-#date-scroll{
+#date-scroll {
     font-size: large;
     text-wrap: nowrap;
     overflow-x: scroll;
@@ -144,19 +144,19 @@
     padding-block: 6px;
 }
 
-#date-scroll h2{
+#date-scroll h2 {
     margin: 0;
 }
 
-.member-section-right-align{
+.member-section-right-align {
     text-align: right;
     align-self: flex-end;
 }
 
-.member-section img{
+.member-section img {
     margin-inline: 8px;
 }
 
-.member-section #clock-img{
+.member-section #clock-img {
     margin-inline: 10px;
 }

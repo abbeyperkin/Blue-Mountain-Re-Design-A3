@@ -1,11 +1,11 @@
-html, body{
+html, body {
     height: 100%;
     margin: 0; /* Remove default margin */
     padding: 0;
     overflow-y: hidden;
 }
 
-#confirmation-box{
+#confirmation-box {
     margin: 15px;
     height: 96%;
     display: flex;
@@ -15,13 +15,13 @@ html, body{
     justify-content: center;
 }
 
-#close-button{
+#close-button {
     position:absolute;
     top: 25px;
     left: 25px;
 }
 
-#confirmation-box h2{
+#confirmation-box h2 {
     font-size: 36px;
     width: 190px;
     text-align: center;
@@ -29,43 +29,43 @@ html, body{
     margin-top: 0;
 }
 
-#confirmation-box p{
+#confirmation-box p {
     font-size: 15px;
     width: 280px;
     text-align: center;
     margin-bottom: 15px;
 }
 
-#confirmation-box img{
+#confirmation-box img {
     margin-bottom: 10px;
 }
 
-#amount-delivery-section{
+#amount-delivery-section {
     display: flex;   
 }
 
-#amount-delivery-section p, #amount-delivery-section h3{
+#amount-delivery-section p, #amount-delivery-section h3 {
     width: fit-content;
     margin-block: 0;
 }
 
-#amount-delivery-section p{
+#amount-delivery-section p {
     font-size: 12px;
     margin-bottom: 30px;
 }
 
-#amount-delivery-section h3{
+#amount-delivery-section h3 {
     font-size: 18px;
     margin-top: 5px;
 }
 
-#amount-section, #delivery-section{
+#amount-section, #delivery-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-inline: 10px;
 }
 
-b{
+b {
     font-weight: 600;
 }

@@ -1,22 +1,22 @@
-.product-preview{
+.product-preview {
     height: 482px;
     padding: 10px;
     position: relative;
 }   
 
-#animated-icon{
+#animated-icon {
     display: flex;
     width: fit-content;
     padding: 6px 10px;
 }
 
-#animated-icon p{
+#animated-icon p {
     margin: 0px;
     font-size: 12px;
     margin-left: 5px;
 }
 
-#product-card{
+#product-card {
     position: absolute;
     z-index: 1;
     height: auto;
@@ -25,79 +25,79 @@
     left: 30px;
 }
 
-#product-envelope{
+#product-envelope {
     width: 300px;
     position: absolute;
     top: -10px;
     right: 0px;
 }
 
-#product-info-container{
+#product-info-container {
     padding: 13px;
     padding-left: 17px;
 }
 
-#product-info-container h2{
+#product-info-container h2 {
     font-size: 28px;
     margin: 0;
     margin-bottom: 10px;
 }
 
-#product-info-container p{
+#product-info-container p {
     margin-top: 0;
 }
 
-#product-info{
+#product-info {
     display: flex;
     font-size: 13px;
     gap: 2px;
 }
 
-.info-subheading{
+.info-subheading {
     margin-bottom: 8px;
 }
 
-#cover-verse{
+#cover-verse {
     width: 50%;
 }
 
-#cover-verse, #inside-verse{
+#cover-verse, #inside-verse {
     margin-bottom: 0px;
 }
 
-#purchase-info-container{
+#purchase-info-container {
     display: flex;
     justify-content: space-between;
     margin-bottom: 5px;
 }
 
-#purchase-info-container h2{
+#purchase-info-container h2 {
     font-size: 30px;
 }
 
-#gift{
+#gift {
     display: flex;
     align-items: center;
     margin-bottom: 11px;
 }
 
-#gift img{
+#gift img {
     width: 27px;
     margin-left: 10px;
     margin-right: 10px;
 }
 
-#gift p{
+#gift p {
     margin: 0;
     font-size: medium;
 }
 
-#add-to-bag{
+#add-to-bag {
     width: 90%;
     margin-left: 5%;
 }
 
-#small-member{
+#small-member {
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -1,4 +1,4 @@
-@font-face {
+@font-face  {
     font-family: 'Keep Calm';
     src: url('./Assets/font/KeepCalm-Medium.woff2') format('woff2'),
         url('./Assets/font/KeepCalm-Medium.woff') format('woff');
@@ -7,11 +7,11 @@
     font-display: swap;
 }
 
-html{
+html {
     overflow-x: hidden;
 }
 
-body{
+body {
     align-items: center;
     padding: 5px;
     font-family: 'Keep Calm';
@@ -19,11 +19,11 @@ body{
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4{
+h1, h2, h3, h4 {
     font-weight: lighter;
 }
 
-.back-box{
+.back-box {
     background-color: #CFDFE8;
     border: 2.5px solid black;
     border-radius: 25px;
@@ -31,7 +31,7 @@ h1, h2, h3, h4{
     max-width: 1100px;
 }
 
-.main-button{
+.main-button {
     color: black;
     background-color: #7AA4D6;
     border: 2.5px solid black;
@@ -44,7 +44,7 @@ h1, h2, h3, h4{
     margin-bottom: 11px;
 }
 
-header{
+header {
     display: flex;
     align-items: center;
     padding-inline: 8px;
@@ -52,7 +52,7 @@ header{
     justify-content: space-evenly;
 }
 
-.hamburger{
+.hamburger {
     height: 37px;
     width: 45px;
     display: flex;
@@ -63,7 +63,7 @@ header{
     border: none;
 }
 
-.hamburger span{
+.hamburger span {
     background-color: black;
     width: 32px;
     height: 3.5px;
@@ -71,20 +71,20 @@ header{
     border-radius: 25px;
 }
 
-.header-button{
+.header-button {
     background-color: transparent;
     border: none;
 }
 
-#search-icon{
+#search-icon {
     margin-right: -10px;
 }
 
-#search-icon img{
+#search-icon img {
     height: 29px;
 }
 
-#product-display-carousel {
+#product-display-carousel  {
     overflow-x: scroll;
     position: relative;
     padding-top: 0px;
@@ -92,7 +92,7 @@ header{
     height: auto;
 }
 
-#product-display-carousel h2 {
+#product-display-carousel h2  {
     position: sticky;
     top: 0;
     margin-top: 10px;
@@ -101,7 +101,7 @@ header{
     z-index: 1;
 }
 
-.card-carousel {
+.card-carousel  {
     display: flex;
     width: 147%;
     max-width: 1100px;
@@ -110,7 +110,7 @@ header{
     justify-content: space-evenly;
 }
 
-.product-window{
+.product-window {
     position: relative;
     height: 243px;
     width: 156px;
@@ -120,7 +120,7 @@ header{
     margin-bottom: 12px;
 }
 
-.product-window section{
+.product-window section {
     height: 85%;
     width: 100%;
     background-color: #f6fafa;
@@ -130,7 +130,7 @@ header{
     border-radius: 25px;
 }
 
-.card-img{
+.card-img {
     position: absolute;
     z-index: 1;
     height: auto;
@@ -139,32 +139,32 @@ header{
     left: 0;
 }
 
-.envelope-img{
+.envelope-img {
     position: absolute;
     top: -5px;
     left: 10px;
 }
 
-.product-window h3{
+.product-window h3 {
     margin: 0;
     margin-top: 8px;
     font-size: 11px;
     text-align: center;
 }
 
-#smh-background{
+#smh-background {
     background-color: #DADCB7;
 }
 
-#mfy-background{
+#mfy-background {
     background-color: #EFE0C0;
 }
 
-#lgw-background{
+#lgw-background {
     background-color: #D1C694;    
 }
 
-.member-section{
+.member-section {
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -172,7 +172,7 @@ header{
     margin-top: 0;
 }
 
-.member-section h2{
+.member-section h2 {
     top: 0;
     margin-bottom: 0;
     margin-top: 0;
@@ -180,17 +180,17 @@ header{
     font-size: larger;
 }
 
-.member-section p{
+.member-section p {
     font-size: 12px;
     max-width: 400px;
 }
 
-.member-section section{
+.member-section section {
     display: flex;
     align-items: center;
 }
 
-#email-section{
+#email-section {
     align-self: center;
     margin-top: 9px;
     margin-bottom: 7px;
@@ -198,7 +198,7 @@ header{
     outline: none;
 }
 
-#email-input{
+#email-input {
     background-color: #f6fafa;
     border: 2.5px solid black;
     border-radius: 25px 0px 0px 25px;
@@ -212,7 +212,7 @@ header{
     font-weight: 100;
 }
 
-#email-sign-up-button{
+#email-sign-up-button {
     height: 32px;
     box-shadow: 3px 3px;
     width: 100px;
@@ -226,34 +226,34 @@ header{
 
 /* FOOTER: */
 
-#footer-links{
+#footer-links {
     display: flex;
     justify-content: space-evenly;
     padding: 7px 11px;
     padding-bottom: 17px;
 }
 
-#footer-links section{
+#footer-links section {
     display: flex;
     flex-direction: column;
     font-size: 10px;
     width: 30%;
 }
 
-#footer-links a{
+#footer-links a {
     margin-top: 12px;
 }
 
-a{
+a {
     color: black;
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: rgba(0, 0, 0, 0.654);
 }
 
-#social-links{
+#social-links {
     display: flex;
     justify-content: space-evenly;
     width: 103%;
@@ -261,7 +261,7 @@ a:hover{
     margin-bottom: 0;
 }
 
-#social-links section{
+#social-links section {
     min-width: 35px;
     padding: 5px 10px;
     padding-top: 7px;

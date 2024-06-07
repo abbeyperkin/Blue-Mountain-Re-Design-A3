@@ -1,13 +1,13 @@
-#checkout-header{
+#checkout-header {
     font-size: 16px;
     margin-left: 15px;
 }
 
-#checkout-container{
+#checkout-container {
     padding: 12px;
 }
 
-.inner-box{
+.inner-box {
     background-color: #ffffff;
     border: 2.5px solid black;
     border-radius: 25px;
@@ -16,7 +16,7 @@
     padding-top: 8px;
 }
 
-.inner-box h2{
+.inner-box h2 {
     font-size: 17px;
     margin: 0px;
     margin-top: 0;
@@ -24,7 +24,7 @@
     margin-left: 4px;
 }
 
-.inner-box input, .inner-box select{
+.inner-box input, .inner-box select {
     background-color: #ffffff;
     border: 2.5px solid black;
     border-radius: 25px;
@@ -36,105 +36,105 @@
     font-size: 12px;
 }
 
-option:first-child{
+option:first-child {
     color: rgba(0, 0, 0, 0.3);
 }
 
-.inner-box .last-input{
+.inner-box .last-input {
     margin-bottom: 1.5px;   
 }
 
-.inner-box:last-child{
+.inner-box:last-child {
     margin-bottom: 0;
 }
 
-.horiz-input{
+.horiz-input {
     display: flex;
     justify-content: space-between;
 }
 
-.horiz-input input{
+.horiz-input input {
     width: 42%;
 }
 
-.horiz-input select{
+.horiz-input select {
     width: 49.3%;
 }
 
-#address-section{
+#address-section {
     position: relative;
 }
 
-#address-search-icon{
+#address-search-icon {
     position: absolute;
     right: 12px;
     top: 20%;
 }
 
-.order-sum-item{
+.order-sum-item {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 12px;
 }
 
-.order-sum-item section, .order-sum-item section p{
+.order-sum-item section, .order-sum-item section p {
     width: fit-content;
     font-size: 13px;
     margin: 4px;
 }
 
-.order-sum-item h3{
+.order-sum-item h3 {
     font-size: 14px;
 }
 
-.order-sum-item img{
+.order-sum-item img {
     background-color: rgb(243, 218, 181);
     border: 2.5px solid black;
     border-radius: 5px;
     height: 80px;
 }
 
-.discount-section{
+.discount-section {
     display: flex;
     flex-direction: column;
 }
 
-.discount-section section{
+.discount-section section {
     display: flex;
     align-items: center;
 }
 
-#subtotal{
+#subtotal {
     display: flex;
     justify-content: space-between;
     margin-inline: 5px;
 }
 
-#subtotal h3{
+#subtotal h3 {
     margin-block: 3px;
     font-size: 14px;
 }
 
 
-#total{
+#total {
     display: flex;
     justify-content: space-between;
     margin-inline: 5px;
     margin-bottom: 12px;
 }
 
-#total h3{
+#total h3 {
     margin-block: 3px;
     font-size: 14px;
 }
 
-#submit-order-button{
+#submit-order-button {
     width: 300px;
     margin-bottom: 5px;
 }
 
-#checkout-footer{
+#checkout-footer {
     display: flex;
     font-size: 10px;
     justify-content: space-evenly;

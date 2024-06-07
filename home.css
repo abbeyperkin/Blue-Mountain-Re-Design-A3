@@ -119,6 +119,16 @@
     column-gap: 11px;
 }
 
+.category img {
+    margin-left: 90px;
+    margin-top: -10px;
+}
+
+#congrats-icon img {
+    margin-top: -15px;
+    margin-left: 85px;
+}
+
 #send-a-gift {
     display: flex;
     flex-direction: column;
@@ -190,7 +200,6 @@
         margin-bottom: 10px;
     }
 
-    
     #sparkle,
     #online,
     #e-cards,
@@ -262,6 +271,7 @@
 
     .category {
         background-color: white;
+        font-size: 11px;
         height: 50px;
         width: 120px;
         margin-bottom: 0;
@@ -271,6 +281,17 @@
     #categories-container a:nth-child(7) .category, #categories-container a:nth-child(8) .category {
         display: none;
 
+    }
+
+    .category img {
+        margin-left: 80px;
+        margin-top: -15px;
+        scale: .85;
+    }
+
+    #congrats-icon img {
+        margin-left: 75px;
+        margin-top: -16px;
     }
 
     #product-display-carousel h2 {
@@ -284,6 +305,7 @@
         justify-content: space-between;
         text-align: left;
     }
+
     #send-a-gift p {
         width: 400px;
     }

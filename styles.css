@@ -269,7 +269,8 @@ header {
     padding-left: 100px;
 }
 
-.item h4, .item h5 {
+.item h4,
+.item h5 {
     margin: 0;
 }
 
@@ -296,7 +297,6 @@ header {
     height: fit-content;
     background-color: transparent;
     border: none;
-
 }
 
 #go-to-checkout-button {

@@ -126,7 +126,9 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        padding: 30px;
     }
+
     #product-info-container h2 {
         font-size: 34px;
     }
@@ -137,12 +139,18 @@
 
     #add-to-bag {
         width: 50%;
+        margin-left: 0;
     }
 
     #product-display-carousel h2,
     #small-member h2 {
         font-size: 24px;
     }
+
+    #purchase-info-container h2{
+        font-size: 35px;
+    }
+
     #small-member {
         width: calc(100% - 35px);
     }
@@ -153,5 +161,9 @@
 
     #email-section {
         width: 400px;
+    }
+
+    #gift {
+        margin-bottom: -160px;
     }
 }

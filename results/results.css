@@ -101,9 +101,19 @@
     #results-grid a{
         scale: 1.2;
     }
+    
     #results-grid{
         column-gap: 20px;
         row-gap: 50px;
         margin-block: 20px;
     }
+
+    #results-grid .product-window, #results-grid .thumbnail {
+        border-width: 2.08px;
+    } 
+
+    #results{
+        margin-bottom:30px;
+    }
+
 }

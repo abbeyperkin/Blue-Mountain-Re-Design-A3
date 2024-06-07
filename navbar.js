@@ -1,4 +1,5 @@
 function openModalBackground() {
+    if (screen.width >= 800) return
     const modalBackground = document.getElementById("modal-background");
 
     document.body.classList.add("not-scrollable");
@@ -51,12 +52,12 @@ function openSearchMenu() {
     const searchMenu = document.getElementById("search-menu");
     const searchBar = document.getElementById('search-bar-input')
     
-    searchBar.focus();
     
     openModalBackground();
     
     searchMenu.classList.remove("close-menu");
     searchMenu.classList.add("open-menu");
+    searchBar.focus();
 }
     
 function closeSearchMenu() {
@@ -85,4 +86,17 @@ function closeShoppingBag() {
     
     shoppingBag.classList.remove("open-menu");
     shoppingBag.classList.add("close-menu");
+}
+
+function openSuperMenu() {
+    const superMenu = document.getElementById("superMenu");
+
+    superMenu.classList.remove("close-menu")
+}
+    
+function closeSuperMenu() {
+    const superMenu = document.getElementById("superMenu");
+
+    superMenu.classList.add("close-menu")
+
 }

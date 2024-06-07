@@ -10,7 +10,7 @@
     </head>
 
     <body>
-        <header class="back-box"> 
+        <header onmouseleave="closeSuperMenu()" class="back-box"> 
             <button onclick="openMenu()" class="hamburger">
                 <span></span>
                 <span></span>
@@ -19,10 +19,91 @@
             <a href=".">
                 <img width="170" src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/Blue Mountain logo new.png" alt="Blue Mountain logo">
             </a>
+            
+            <a href="results" onmouseover="openSuperMenu()">E-Cards</a>
+            <a href="results" onmouseover="openSuperMenu()">SmashUps™</a>
+            <a href="results" onmouseover="openSuperMenu()">Creatacards™</a>
+            <a href="results">Gift Cards</a>
+            <a href="https://apps.apple.com/us/app/blue-mountain-ecards/id1571373350">App</a>
             <button onclick="openSearchMenu()" class="header-button" id="search-icon"><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Search Icon.svg" alt="Search icon"></button>
             <button onclick="openShoppingBag()" class="header-button"><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Bag Icon.svg" alt="Bag icon"></button>
         </header>
 
+        <nav onmouseover="openSuperMenu()" onmouseleave="closeSuperMenu()" id="superMenu" class="close-menu">
+            <section>
+                <h2>E-Cards</h2>
+                <section>
+                    <ul>
+                        <li><a href="/results">Anniversary</a></li>
+                        <li><a href="/results">Birthday</a></li>
+                        <li><a href="/results">Congratulations</a></li>
+                        <li><a href="/results">Encouragement</a></li>
+                        <li><a href="/results">Friendship</a></li>
+                        <li><a href="/results">Get Well</a></li>
+                        <li><a href="/results">Graduation</a></li>
+                    </ul>
+    
+                    <ul>
+                        <li><a href="/results">Holidays</a></li>
+                        <li><a href="/results">Just Because</a></li>
+                        <li><a href="/results">Love</a></li>
+                        <li><a href="/results">Sympathy</a></li>
+                        <li><a href="/results">Thank You</a></li>
+                        <li><a href="/results">Postcards</a></li>
+                        <li><a href="/results">View more Ecards</a></li>
+                    </ul>
+                </section>
+            </section>
+          
+            <section>
+                <h2>SmashUps™</h2>
+                <section>
+                    <ul>
+                        <li><a href="/results">Anniversary</a></li>
+                        <li><a href="/results">Birthday</a></li>
+                        <li><a href="/results">Congratulations</a></li>
+                        <li><a href="/results">Friendship</a></li>
+                        <li><a href="/results">Graduation</a></li>
+                        <li><a href="/results">Just Because</a></li>
+                        <li><a href="/results">Thank You</a></li>
+                    </ul>
+    
+                    <ul>
+                        <li><a href="/results">Celebrity SmashUps™</a></li>
+                        <li><a href="/results">Original SmashUps™</a></li>
+                        <li><a href="/results">Talking SmashUps™</a></li>
+                        <li><a href="/results">Type Any Name</a></li>
+                        <li><a href="/results">Selfie SmashUps™</a></li>
+                        <li><a href="/results">View more SmashUps™</a></li>
+                    </ul>
+                </section>
+            </section>
+          
+            <section>
+                <h2>Creatacards™</h2>
+                <section>
+                    <ul>
+                        <li><a href="/results">Anniversary</a></li>
+                        <li><a href="/results">Baby</a></li>
+                        <li><a href="/results">Birthday</a></li>
+                        <li><a href="/results">Congratulations</a></li>
+                        <li><a href="/results">Encouragement</a></li>
+                        <li><a href="/results">Holidays</a></li>
+                        <li><a href="/results">Graduation</a></li>
+                    </ul>
+    
+                    <ul>
+                        <li><a href="/results">Love</a></li>
+                        <li><a href="/results">Sympathy</a></li>
+                        <li><a href="/results">Thank You</a></li>
+                        <li><a href="/results">Thinking of You</a></li>
+                        <li><a href="/results">Wedding</a></li>
+                        <li><a href="/results">View more Creatacards™</a></li>
+                    </ul>
+                </section>
+            </section>
+        </nav>
+          
         <div id="modal-background" onclick="closeAllMenus()" class="close-menu"></div>
 
         <aside id="sidebar" class="back-box close-menu">
@@ -78,7 +159,7 @@
             <button class="sidebar-exit-button right-aligned" onclick="closeSearchMenu()"><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Exit icon.svg" alt=""></button>
             
             <section id="search-bar">
-                <input id="search-bar-input" type="text" placeholder="Search">
+                <input id="search-bar-input" type="text" placeholder="Search" autofocus>
                 <button id="search-button" class="main-button"><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Search Icon searchbar.svg" alt=""></button>
             </section>
             
@@ -121,9 +202,9 @@
 
                     <section class="pricing-section">
                         <section class="quantity-adjust">
-                            <button><img src="Assets/icons/Minus Icon.svg" alt=""></button>
+                            <button><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Minus Icon.svg" alt=""></button>
                             <p>1</p>
-                            <button><img src="Assets/icons/Plus Icon.svg" alt=""></button>
+                            <button><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Plus Icon.svg" alt=""></button>
                         </section>
 
                         <p class="price">$1.95</p>
@@ -148,9 +229,9 @@
 
                     <section class="pricing-section">
                         <section class="quantity-adjust">
-                            <button><img src="Assets/icons/Minus Icon.svg" alt=""></button>
+                            <button><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Minus Icon.svg" alt=""></button>
                             <p>1</p>
-                            <button><img src="Assets/icons/Plus Icon.svg" alt=""></button>
+                            <button><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Plus Icon.svg" alt=""></button>
                         </section>
 
                         <p class="price">$1.95</p>
@@ -253,6 +334,14 @@
         <footer>
             <!-- Add links to pages -->
             <article id="footer-links" class="back-box">
+                <section id="desktop-links">
+                    <a href="">Birthday Ecards</a>
+                    <a href="">Holiday Ecards</a>
+                    <a href="">Talking Smashups™</a>
+                    <a href="">Original Smashups™</a>
+                    <a href="">Celebrity Smashups™</a>
+                    <a href="">Creatacards™</a>
+                </section>
                 <section>
                     <a href="">Member Benefits</a>
                     <a href="">Gifts</a>
@@ -272,30 +361,34 @@
                     <a href="">Email Protection</a>
                     <a href="">Accessibility</a>
                     <a href="">Policies</a>
-                    <a href="">Do Not Sell or Share My Personal Information</a>
+                    <a href="">Do Not Sell or Share My <br> Personal Information</a>
                 </section>
             </article>            
             <article id="social-links">
-                <section class="back-box">
-                    <a href="">
-                        <img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/App Store Icon.svg" alt="Apple store download logo">
-                    </a>
-                </section>
-                <section class="back-box">
-                    <a href="">
-                        <img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Google Play Icon.svg" alt="Google Play download logo">
-                    </a>
-                </section>
-                <section class="back-box">
-                    <a href="">
-                        <img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Facebook icon.svg" alt="Facebook logo">
-                    </a>
-                </section>
-                <section class="back-box">
-                    <a href="">
-                        <img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Pinterest Icon.svg" alt="Pinterest logo">
-                    </a>
-                </section>
+                <div>
+                    <section class="back-box">
+                        <a href="">
+                            <img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/App Store Icon.svg" alt="Apple store download logo">
+                        </a>
+                    </section>
+                    <section class="back-box">
+                        <a href="">
+                            <img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Google Play Icon.svg" alt="Google Play download logo">
+                        </a>
+                    </section>
+                </div>
+                <div>
+                    <section class="back-box">
+                        <a href="">
+                            <img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Facebook icon.svg" alt="Facebook logo">
+                        </a>
+                    </section>
+                    <section class="back-box">
+                        <a href="">
+                            <img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Pinterest Icon.svg" alt="Pinterest logo">
+                        </a>
+                    </section>
+                </div>
             </article>
         </footer>
 

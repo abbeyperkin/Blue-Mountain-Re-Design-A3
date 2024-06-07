@@ -64,15 +64,18 @@ header a:not(:nth-child(2)){
     display: none;
 }
 
+header a:not(:nth-child(2)):hover nav{
+    display: flex;
+}
+
 nav{
-    display: none;
-    /* display: flex; */
+    display: flex;
     justify-content: space-evenly;
     position: absolute;
     z-index: 4;
     width: calc(100% - 315px);
-    top: 88px;
-    height: 300px;
+    top: 87px;
+    height: 260px;
     background-color: white;
     border-radius: 25px;
     border: 2.5px solid black;
@@ -80,6 +83,7 @@ nav{
 
 nav h2{
     font-size: 20px;
+    margin-bottom: 0;
 }
 nav section section{
     display: flex;
@@ -88,7 +92,12 @@ nav section section{
 
 nav ul{
     list-style-type: none;
-    padding-left: 30px;
+    margin-top: 0;
+    margin-right: 10px;
+    padding-left: 0px;
+}
+nav li{
+    margin-top: 10px;
 }
 
 .hamburger {
@@ -237,6 +246,10 @@ nav ul{
     border: none;
 }
 
+.header-button:hover {
+    cursor: pointer;
+}
+
 #search-icon {
     margin-right: -10px;
 }
@@ -338,7 +351,7 @@ nav ul{
     overflow-x: scroll;
     position: relative;
     padding-top: 0px;
-    width: 100%;
+    width: 98%;
     height: auto;
 }
 
@@ -561,7 +574,7 @@ a:hover {
 
 }
 
-@media only screen and (min-width: 1300px)  {
+@media only screen and (min-width: 800px)  {
     body{
         display: flex;
         flex-direction: column;
@@ -576,8 +589,20 @@ a:hover {
         display: block;
     }
 
+    #search-menu{
+        right: 220px;
+    }
+
+    #shopping-bag{
+        right: 190px
+    }
+
     .hamburger{
         display: none;
+    }
+
+    #product-display-carousel{
+        width: 100%;
     }
 
     .card-carousel{
@@ -601,4 +626,5 @@ a:hover {
         margin-right: -50px;
         width: 104%;
     }
+
 }

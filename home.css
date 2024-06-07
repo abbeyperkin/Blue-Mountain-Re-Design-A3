@@ -76,7 +76,6 @@
 }
 
 #plane-occasion {
-
     top: 68%;
     left: 45%;    
 }
@@ -104,8 +103,8 @@
 .category {
     padding-block: 12px;
     padding-inline: 18px;
-    height: 50px;
-    width: 120px;
+    height: 56px;
+    width: 134px;
     max-width: 176px;
     font-size: 12px;
 }
@@ -263,6 +262,8 @@
 
     .category {
         background-color: white;
+        height: 50px;
+        width: 120px;
         margin-bottom: 0;
         margin-left: 10px;
     }
@@ -322,7 +323,4 @@
         margin-top: 40px;
         width: 400px;
     }
-    
-    
-
 }

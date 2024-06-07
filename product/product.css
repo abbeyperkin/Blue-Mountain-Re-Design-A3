@@ -114,6 +114,14 @@
         margin-right: 13px;
     }
 
+    #product-info{
+        margin-bottom: 80px;
+    }
+
+    #cover-verse {
+        margin-right: 20px;
+    }
+
     #product-info-container {
         display: flex;
         flex-direction: column;
@@ -124,7 +132,7 @@
     }
 
     #product-info-container p {
-        font-size: 22px;
+        font-size: 17px;
     }
 
     #add-to-bag {
@@ -140,7 +148,7 @@
     }
 
     #small-member p{
-        font-size: 20px;
+        font-size: 15px;
     }
 
     #email-section {

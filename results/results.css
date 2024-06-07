@@ -85,10 +85,25 @@
     #results-grid {
         grid-template-columns: repeat(3, 1fr);
     }
-  }
+}
 
-  @media only screen and (min-width: 1000px)  {
+@media only screen and (min-width: 1000px)  {
     #results-grid {
         grid-template-columns: repeat(4, 1fr);
     }
-  }
+}
+
+@media only screen and (min-width: 800px){
+    #filter-result-box{
+        width: calc(100% - 38px);
+    }
+
+    #results-grid a{
+        scale: 1.2;
+    }
+    #results-grid{
+        column-gap: 20px;
+        row-gap: 50px;
+        margin-block: 20px;
+    }
+}

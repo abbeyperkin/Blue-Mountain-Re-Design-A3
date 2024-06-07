@@ -69,3 +69,27 @@ html, body {
 b {
     font-weight: 600;
 }
+
+@media only screen and (min-width: 800px){
+    #confirmation-box {
+        width: 100%;
+    }
+
+    #confirmation-box h2 {
+        width: fit-content;
+    }
+
+    #confirmation-box p {
+        scale: 1.5;
+    }
+
+    #amount-delivery-section {
+        width: 350px;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    #confirmation-box img{
+        margin-bottom: 40px;
+    }
+}

@@ -6,7 +6,7 @@
         <title>Document</title>
         <link rel="stylesheet" href="../styles.css">
         <link rel="stylesheet" href="checkout.css">
-        <base href="/Blue-Mountain-Re-Design-A3/">
+        <!-- <base href="/Blue-Mountain-Re-Design-A3/"> -->
     </head>
 
     <body>
@@ -175,59 +175,61 @@
         </section>
 
         <article id="checkout-container" class="back-box">
-            <section class="inner-box">
-                <h2>Contact</h2>
-                <input class="last-input" type="email" placeholder="Enter your email">
-            </section>
-
-            <section class="inner-box">
-                <h2>Payment</h2>
-                <input type="number" placeholder="Card number">
-                <section class="horiz-input">
-                    <input type="text" placeholder="Expiry (MM/YY)">
-                    <!-- TODO: Add tooltip for CVV -->
-                    <input type="number" placeholder="CVV">
+            <section id="checkout-form">
+                <section class="inner-box">
+                    <h2>Contact</h2>
+                    <input class="last-input" type="email" placeholder="Enter your email">
                 </section>
-                <input class="last-input" type="text" placeholder="Name on Card">
-            </section>
-
-            <section class="inner-box">
-                <h2>Billing Address</h2>
-                <!-- TODO: Reconsider adding country options -->
-                <input type="text" placeholder="Country or Region">  
-
-                <section class="horiz-input">
-                    <input type="text" placeholder="First name">
-                    <input type="text" placeholder="Last Name">
+    
+                <section class="inner-box">
+                    <h2>Payment</h2>
+                    <input type="number" placeholder="Card number">
+                    <section class="horiz-input">
+                        <input type="text" placeholder="Expiry (MM/YY)">
+                        <!-- TODO: Add tooltip for CVV -->
+                        <input type="number" placeholder="CVV">
+                    </section>
+                    <input class="last-input" type="text" placeholder="Name on Card">
                 </section>
-
-                <section id="address-section">
-                    <input type="text" placeholder="Address"> 
-                    <img id="address-search-icon"src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Small Search Icon.svg" alt="">    
-                </section>   
-
-                <input type="text" placeholder="Apartment, unit, suite, e.g. (optional)">  
-
-                <input type="text" placeholder="City">       
-
-                <section class="horiz-input">
-                    <select>
-                        <option value="na" selected>State</option>
-                        <option value="victoria">Victoria</option>
-                        <option value="queensland">Queensland</option>
-                        <option value="new south wales">New South Wales</option>
-                        <option value="western australia">Western Australia</option>
-                        <option value="northern territory">Northern Territory</option>
-                        <option value="ACT">ACT</option>
-                        <option value="tasmania">Tasmania</option>
-                    </select>
-                    <input type="text" placeholder="Postcode">
-                </section> 
-
-                <input class="last-input" type="number" placeholder="Phone (optional)">
+    
+                <section class="inner-box">
+                    <h2>Billing Address</h2>
+                    <!-- TODO: Reconsider adding country options -->
+                    <input type="text" placeholder="Country or Region">  
+    
+                    <section class="horiz-input">
+                        <input type="text" placeholder="First name">
+                        <input type="text" placeholder="Last Name">
+                    </section>
+    
+                    <section id="address-section">
+                        <input type="text" placeholder="Address"> 
+                        <img id="address-search-icon"src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Small Search Icon.svg" alt="">    
+                    </section>   
+    
+                    <input type="text" placeholder="Apartment, unit, suite, e.g. (optional)">  
+    
+                    <input type="text" placeholder="City">       
+    
+                    <section class="horiz-input">
+                        <select>
+                            <option value="na" selected>State</option>
+                            <option value="victoria">Victoria</option>
+                            <option value="queensland">Queensland</option>
+                            <option value="new south wales">New South Wales</option>
+                            <option value="western australia">Western Australia</option>
+                            <option value="northern territory">Northern Territory</option>
+                            <option value="ACT">ACT</option>
+                            <option value="tasmania">Tasmania</option>
+                        </select>
+                        <input type="text" placeholder="Postcode">
+                    </section> 
+    
+                    <input class="last-input" type="number" placeholder="Phone (optional)">
+                </section>
             </section>
 
-            <section class="inner-box">
+            <section id="order-summary" class="inner-box">
                 <h2>Order Summary</h2>
                 <a href="product">
                     <section class="order-sum-item">

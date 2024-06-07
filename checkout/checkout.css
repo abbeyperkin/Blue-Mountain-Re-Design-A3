@@ -71,6 +71,10 @@ option:first-child {
     top: 20%;
 }
 
+#checkout-form {
+    margin-bottom: 12px;
+}
+
 .order-sum-item {
     display: flex;
     justify-content: space-around;
@@ -140,4 +144,43 @@ option:first-child {
     justify-content: space-evenly;
     padding-block: 12px;
     margin-bottom: 0;
+}
+
+@media only screen and (min-width: 800px){
+    #checkout-header {
+        display: none;
+    }
+
+    #checkout-container {
+        width: calc(100% - 25px);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #checkout-form {
+        width: 60%;
+        margin-bottom: 0;
+    }
+
+    #order-summary {
+        width: 36%;
+    }
+
+    .inner-box input:not(.horiz-input input){
+        width: 96%;
+    }
+    .horiz-input input{
+        width: 45%;
+    }
+
+    .discount-section{
+        margin-top: 210px
+    }
+
+    footer{
+        margin-left: 0;
+        width: 100%;
+    }
+
+    
 }

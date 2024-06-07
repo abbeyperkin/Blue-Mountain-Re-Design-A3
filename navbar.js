@@ -50,20 +50,39 @@ function closeMenu() {
 function openSearchMenu() {
     const searchMenu = document.getElementById("search-menu");
     const searchBar = document.getElementById('search-bar-input')
-
+    
     searchBar.focus();
-
+    
     openModalBackground();
-
+    
     searchMenu.classList.remove("close-menu");
     searchMenu.classList.add("open-menu");
 }
-
+    
 function closeSearchMenu() {
     const searchMenu = document.getElementById("search-menu");
-
+    
     closeModalBackground();
-
+    
     searchMenu.classList.remove("open-menu");
     searchMenu.classList.add("close-menu");
+}
+    
+function openShoppingBag() {
+        const shoppingBag = document.getElementById("shopping-bag");
+        
+        openModalBackground();
+        
+        shoppingBag.classList.remove("close-menu");
+        shoppingBag.classList.add("open-menu");
+        
+}
+
+function closeShoppingBag() {
+    const shoppingBag = document.getElementById("shopping-bag");
+    
+    closeModalBackground();
+    
+    shoppingBag.classList.remove("open-menu");
+    shoppingBag.classList.add("close-menu");
 }

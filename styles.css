@@ -162,7 +162,8 @@ header {
     top: 25px;
 }
 
-#search-menu ul, #search-menu h3 {
+#search-menu ul,
+#search-menu h3 {
     padding-left: 16px;
 }
 
@@ -190,7 +191,7 @@ header {
     margin-top: -2px;
 }
 
-#search-bar{
+#search-bar {
     display: flex;
 }
 
@@ -209,8 +210,97 @@ header {
     margin-right: -10px;
 }
 
-#search-icon img, #search-bar img {
+#search-icon img,
+#search-bar img {
     height: 29px;
+}
+
+#shopping-bag {
+    position: absolute;
+    top: 13px;
+    z-index: 3;
+    width: 329px;
+    height: 780px;
+    padding: 15px;
+}
+
+#shopping-bag .right-aligned {
+    left: auto;
+    right: 22.2px;
+    top: 25px;
+}
+
+#shopping-bag h3 {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 12px;
+}
+
+#items-section {
+    height: 580px;
+}
+
+#shopping-bag-total {
+    display: flex;
+    width: calc(100% - 24px);
+    background: white;
+    border: 2.5px solid black;
+    border-radius: 25px;
+    justify-content: space-between;
+    padding-inline: 10px;
+    margin-block: 15px;
+}
+
+#shopping-bag-total p {
+    margin: 10px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    width: 225px;
+    height: 120px;
+    border-radius: 25px;
+    border: 2.5px solid black;
+    background-color: white;
+    margin-bottom: 15px;
+    padding-left: 100px;
+}
+
+.item h4, .item h5 {
+    margin: 0;
+}
+
+.product-desc {
+    margin-top: 7px;
+}
+
+.pricing-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+    margin-right: 18px;
+}
+
+.quantity-adjust {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-adjust button {
+    margin-top: 3px;
+    height: fit-content;
+    background-color: transparent;
+    border: none;
+
+}
+
+#go-to-checkout-button {
+    width: 100%;
 }
 
 #product-display-carousel {
@@ -249,14 +339,36 @@ header {
     margin-bottom: 12px;
 }
 
-.product-window section {
-    height: 85%;
-    width: 100%;
+.thumbnail {
+    position: relative;
+    height: 211px;
+    width: 156px;
     background-color: #f6fafa;
     border: 2.5px solid black;
     margin-left: -2.5px;
     margin-top: -2.5px;
     border-radius: 25px;
+}
+
+.small-thumbnail {
+    position: absolute;
+    left: 0px;
+    width: 90px;
+    height: 100%;
+}
+.small-thumbnail .card-img {
+    width: 65px;
+    top: auto;
+    bottom: 5px;
+    left: 8px;
+}
+
+.small-thumbnail .envelope-img {
+    width: 70px;
+    top: auto;
+    left: auto;
+    top: 0px;
+    right: 0px;
 }
 
 .card-img {

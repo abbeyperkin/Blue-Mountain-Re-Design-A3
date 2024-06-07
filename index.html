@@ -22,7 +22,7 @@
                 <img width="170" src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/Blue Mountain logo new.png" alt="Blue Mountain logo">
             </a>
             <button onclick="openSearchMenu()" class="header-button" id="search-icon"><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Search Icon.svg" alt="Search icon"></button>
-            <button class="header-button"><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Bag Icon.svg" alt="Bag icon"></button>
+            <button onclick="openShoppingBag()" class="header-button"><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Bag Icon.svg" alt="Bag icon"></button>
         </header>
 
         <div id="modal-background" onclick="closeAllMenus()" class="close-menu"></div>
@@ -96,6 +96,79 @@
                 <li><a href="results">Sympathy</a></li>
                 <li><a href="results">Friendship</a></li>
             </ul>
+
+        </section>
+
+        <section id="shopping-bag" class="close-menu back-box">
+            <button class="sidebar-exit-button right-aligned" onclick="closeShoppingBag()"><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Exit icon.svg" alt=""></button>
+
+            <h3>Shopping Bag</h3>
+
+            <section id="items-section">
+                
+                <article class="item">
+                    <a href="product">
+                        <section id="mfy-background" class="thumbnail small-thumbnail">
+                            <img class="card-img" src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/cards/Friend years GIF 1.svg" alt="">
+                            <img class="envelope-img" src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/cards/Friend Years 1.svg" alt="">
+                        </section>
+                    </a>
+
+                    <a href="product">
+                        <section class="product-desc">
+                            <h4>More Friend Years</h4>
+                            <h5>Animated Creatacard™</h5>
+                        </section>
+                    </a>
+
+                    <section class="pricing-section">
+                        <section class="quantity-adjust">
+                            <button><img src="Assets/icons/Minus Icon.svg" alt=""></button>
+                            <p>1</p>
+                            <button><img src="Assets/icons/Plus Icon.svg" alt=""></button>
+                        </section>
+
+                        <p class="price">$1.95</p>
+
+                    </section>
+                </article>
+
+                <article class="item">
+                    <a href="product">
+                        <section id="smh-background" class="thumbnail small-thumbnail">
+                            <img class="card-img" src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/cards/So much happiness GIF 1.svg" alt="">
+                            <img class="envelope-img" src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/cards/So much happiness 1.svg" alt="">
+                        </section>
+                    </a>
+
+                    <a href="product">
+                        <section class="product-desc">
+                            <h4>So Much Happiness</h4>
+                            <h5>Animated Creatacard™</h5>
+                        </section>
+                    </a>
+
+                    <section class="pricing-section">
+                        <section class="quantity-adjust">
+                            <button><img src="Assets/icons/Minus Icon.svg" alt=""></button>
+                            <p>1</p>
+                            <button><img src="Assets/icons/Plus Icon.svg" alt=""></button>
+                        </section>
+
+                        <p class="price">$1.95</p>
+
+                    </section>
+                </article>
+            </section>
+
+            <section id="shopping-bag-total">
+                <p>Total</p>
+                <p>$3.90</p>
+            </section>
+
+            <a href="checkout">
+                <button id="go-to-checkout-button" class="main-button">Go to Checkout</button>
+            </a>
 
         </section>
 
@@ -190,7 +263,7 @@
             <article class="card-carousel">
                 <a href="product">
                     <section class="product-window">
-                        <section id="smh-background">
+                        <section id="smh-background" class="thumbnail">
                             <img class="card-img" src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/cards/So much happiness GIF 1.svg" alt="">
                             <img class="envelope-img" src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/cards/So much happiness 1.svg" alt="">
                         </section>
@@ -199,7 +272,7 @@
                 </a>
                 <a href="product">
                     <section class="product-window">
-                        <section id="mfy-background">
+                        <section id="mfy-background" class="thumbnail">
                             <img class="card-img" src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/cards/Friend years GIF 1.svg" alt="">
                             <img class="envelope-img" src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/cards/Friend Years 1.svg" alt="">
                         </section>
@@ -208,7 +281,7 @@
                 </a>
                 <a href="product">
                     <section class="product-window">
-                        <section id="lgw-background">
+                        <section id="lgw-background" class="thumbnail">
                             <img class="card-img" src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/cards/Like good whiskey.svg" alt="">
                             <img class="envelope-img" src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/cards/Group 31.svg" alt="">
                         </section>

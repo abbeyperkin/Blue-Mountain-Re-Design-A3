@@ -60,6 +60,33 @@ header {
     justify-content: space-evenly;
 }
 
+nav{
+    display: none;
+    /* display: flex; */
+    justify-content: space-evenly;
+    position: absolute;
+    z-index: 4;
+    width: calc(100% - 315px);
+    top: 88px;
+    height: 300px;
+    background-color: white;
+    border-radius: 25px;
+    border: 2.5px solid black;
+}
+
+nav h2{
+    font-size: 20px;
+}
+nav section section{
+    display: flex;
+    font-size: 12px;
+}
+
+nav ul{
+    list-style-type: none;
+    padding-left: 30px;
+}
+
 .hamburger {
     height: 37px;
     width: 45px;
@@ -315,7 +342,7 @@ header {
     position: sticky;
     top: 0;
     margin-top: 10px;
-    left: 18px;
+    margin-left: 23px;
     font-size: larger;
     z-index: 1;
 }
@@ -467,11 +494,21 @@ header {
 
 /* FOOTER: */
 
+footer{
+    width: calc(100% - 40px);
+}
+
+footer article #desktop-links{
+    display: none;
+}
+
 #footer-links {
     display: flex;
     justify-content: space-evenly;
-    padding: 7px 11px;
+    width: 100%;
+    padding: 10px 20px;
     padding-bottom: 17px;
+    
 }
 
 #footer-links section {
@@ -496,9 +533,8 @@ a:hover {
 
 #social-links {
     display: flex;
-    justify-content: space-evenly;
-    width: 103%;
-    margin-left: -2%;
+    justify-content: space-between;
+    width: 100%;
     margin-bottom: 0;
 }
 
@@ -510,4 +546,50 @@ a:hover {
     align-items: center;
     justify-content: center;
     margin-bottom: 0;
+}
+
+#social-links div {
+    display: flex;
+}
+
+#social-links div section{
+    margin-right: 6px;
+
+}
+
+@media only screen and (min-width: 1300px)  {
+    body{
+        display: flex;
+        flex-direction: column;
+        padding-inline: 150px;
+    }
+    header{
+        width: calc(100% - 16px);
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .card-carousel{
+        width: 100%;
+    }
+
+    footer article #desktop-links{
+        display: flex;
+    }
+
+    footer{
+        margin-left: -40px;
+    }
+
+    footer #footer-links a{
+        margin-top: 6px;
+    }
+    
+    #social-links{
+        justify-content: space-between;
+        margin-right: -50px;
+        width: 104%;
+    }
 }

@@ -60,6 +60,10 @@ header {
     justify-content: space-evenly;
 }
 
+header a:not(:nth-child(2)){
+    display: none;
+}
+
 nav{
     display: none;
     /* display: flex; */
@@ -563,8 +567,13 @@ a:hover {
         flex-direction: column;
         padding-inline: 150px;
     }
+
     header{
         width: calc(100% - 16px);
+    }
+
+    header a:not(:nth-child(2)){
+        display: block;
     }
 
     .hamburger{

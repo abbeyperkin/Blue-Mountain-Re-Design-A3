@@ -261,67 +261,67 @@
             <section id="checkout-form">
                 <section class="inner-box">
                     <h2>Contact</h2>
-                    <label for="email-input">Email</label>
-                    <input id="email-input" class="last-input" type="email" placeholder="Enter your email">
+                    <label for="email-address-input">Email</label>
+                    <input onblur="checkIfFilled(this)" id="email-address-input" class="last-input" type="email" placeholder="email@example.com">
                 </section>
         
                 <section class="inner-box">
                     <h2>Payment</h2>
                     <label for="card-number-input">Card Number</label>
-                    <input id="card-number-input" type="number" placeholder="Card number">
+                    <input onblur="checkIfFilled(this)" id="card-number-input" type="number" placeholder="1234 1234 1234 1234">
                     <section class="horiz-input">
                         <div>
-                            <label for="expiry-input">Expiry Date (MM/YY)</label>
-                            <input id="expiry-input" type="text" placeholder="Expiry (MM/YY)">
+                            <label for="expiry-input">Expiry Date</label>
+                            <input onblur="checkIfFilled(this)" id="expiry-input" type="text" placeholder="(MM/YY)">
                         </div>
                         <div>
                             <label for="cvv-input">CVV</label>
-                            <input id="cvv-input" type="number" placeholder="CVV">
+                            <input onblur="checkIfFilled(this)" id="cvv-input" type="number" placeholder="123">
                             <span class="tooltip">
                                 ?
-                                <span class="tooltip-text">The 3 whacky numbers on the back</span>
+                                <span class="tooltip-text">The 3-digit code on the back of your card</span>
                             </span>
                         </div>
                     </section>
                     <label for="name-on-card-input">Name on Card</label>
-                    <input id="name-on-card-input" class="last-input" type="text" placeholder="Name on Card">
+                    <input onblur="checkIfFilled(this)" id="name-on-card-input" class="last-input" type="text" placeholder="e.g. John Smith">
                 </section>
         
                 <section class="inner-box">
                     <h2>Billing Address</h2>
                     <label for="country-input">Country or Region</label>
-                    <input id="country-input" type="text" placeholder="Country or Region">  
+                    <input onblur="checkIfFilled(this)" id="country-input" type="text" placeholder="Country or Region">  
                     <label for="full-name-input">Full Name</label>
-                    <input id="full-name-input" type="text" placeholder="Full Name">
+                    <input onblur="checkIfFilled(this)" id="full-name-input" type="text" placeholder="First and last">
                     <section id="address-section">
                         <label for="address-input">Address</label>
-                        <input id="address-input" type="text" placeholder="Address"> 
+                        <input onblur="checkIfFilled(this)" id="address-input" type="text" placeholder="House number and street name"> 
                         <img id="address-search-icon" src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Small Search Icon.svg" alt="">    
                     </section>   
                     <label for="apartment-input">Apartment, unit, suite, etc. (optional)</label>
-                    <input id="apartment-input" type="text" placeholder="Apartment, unit, suite, e.g. (optional)">  
+                    <input id="apartment-input" type="text">  
                     <label for="city-input">City</label>
-                    <input id="city-input" type="text" placeholder="City">       
+                    <input onblur="checkIfFilled(this)" id="city-input" type="text">       
                     <section class="horiz-input">
                         <div>
                             <label for="state-select">State</label>
-                            <select id="state-select">
+                            <select onblur="checkIfFilled(this)" id="state-select">
+                                <option value="" disabled selected>Please Select</option>
                                 <option value="victoria">Victoria</option>
                                 <option value="queensland">Queensland</option>
                                 <option value="new south wales">New South Wales</option>
                                 <option value="western australia">Western Australia</option>
                                 <option value="northern territory">Northern Territory</option>
+                                <option value="northern territory">South Australia</option>
                                 <option value="ACT">ACT</option>
                                 <option value="tasmania">Tasmania</option>
                             </select>
                         </div>
                         <div>
-                            <label for="postcode-input">Postcode</label>
-                            <input id="postcode-input" type="text" placeholder="Postcode">
+                            <label for="postcode-input">Post/ZIP Code</label>
+                            <input onblur="checkIfFilled(this)" id="postcode-input" type="text" placeholder="1234">
                         </div>
-                    </section> 
-                    <label for="phone-input">Phone (optional)</label>
-                    <input id="phone-input" class="last-input" type="number" placeholder="Phone (optional)">
+                    </section>
                 </section>
             </section>
         
@@ -334,7 +334,7 @@
                             <p><b>More Friend Years</b></p>
                             <p>Animated Creatacard™</p>
                         </section>
-                        <h3>$2.95</h3>
+                        <h3>$1.95</h3>
                     </section>
                 </a>
         
@@ -348,31 +348,88 @@
                         <h3>$1.95</h3>
                     </section>
                 </a>
+                
                 <section class="discount-section">
                     <label for="discount-input">Discount Code</label>
-                    <input id="discount-input" type="text" placeholder="Discount code">
-                    <button id="discount-apply-button" class="main-button">Apply</button>
+                    <section>
+                        <input id="discount-input" type="text" placeholder="">
+                        <button id="discount-apply-button" class="main-button" type="button">Apply</button>
+                    </section>
                 </section>
         
                 <section id="subtotal">
                     <h3>Subtotal</h3>
-                    <h3>$4.90</h3>
+                    <h3>$3.90</h3>
                 </section>
         
                 <section id="total">
                     <h3><b>Total</b></h3>
-                    <h3><b>$4.90</b></h3>
+                    <h3><b>$3.90</b></h3>
                 </section>
                 <button id="submit-order-button" class="main-button" type="submit">Submit Order</button>
             </section>
         </form>
         
-        
+        <footer>
+            <!-- Add links to pages -->
+            <article id="footer-links" class="back-box">
+                <section id="desktop-links">
+                    <a href=".">Birthday Ecards</a>
+                    <a href=".">Holiday Ecards</a>
+                    <a href=".">Talking Smashups™</a>
+                    <a href=".">Original Smashups™</a>
+                    <a href=".">Celebrity Smashups™</a>
+                    <a href=".">Creatacards™</a>
+                </section>
+                <section>
+                    <a href=".">Member Benefits</a>
+                    <a href=".">Gifts</a>
+                    <a href=".">Pick Up E-Card</a>
+                    <a href=".">About Us</a>
+                </section>
+                <section>
+                    <a href=".">My Account</a>
+                    <a href=".">Personal Information</a>
+                    <a href=".">Contacts & Reminders</a>
+                    <a href=".">Feedback</a>
+                    <a href=".">FAQs</a>
+                    <a href=".">Contact Us</a>
+                </section>
+                <section>
+                    <a href=".">Terms of Service</a>
+                    <a href=".">Email Protection</a>
+                    <a href=".">Accessibility</a>
+                    <a href=".">Policies</a>
+                    <a href=".">Do Not Sell or Share My <br> Personal Information</a>
+                </section>
+            </article>            
+            <article id="social-links">
+                <div>
+                    <section class="back-box">
+                        <a href=".">
+                            <img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/App Store Icon.svg" alt="Apple store download logo">
+                        </a>
+                    </section>
+                    <section class="back-box">
+                        <a href=".">
+                            <img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Google Play Icon.svg" alt="Google Play download logo">
+                        </a>
+                    </section>
+                </div>
+                <div>
+                    <section class="back-box">
+                        <a href=".">
+                            <img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Facebook icon.svg" alt="Facebook logo">
+                        </a>
+                    </section>
+                    <section class="back-box">
+                        <a href=".">
+                            <img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Pinterest Icon.svg" alt="Pinterest logo">
+                        </a>
+                    </section>
+                </div>
+            </article>
 
-        <footer id="checkout-footer" class="back-box">
-            <a href=".">Privacy Policy</a>
-            <a href=".">Refund Policy</a>
-            <a href=".">Terms of Service</a>
         </footer>
 
         <script src="../navbar.js"></script>

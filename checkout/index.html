@@ -257,7 +257,8 @@
             <h2>Checkout</h2>
         </section>
 
-        <article id="checkout-container" class="back-box">
+        <form id="checkout-container" class="back-box" action="/confirmation/" method="POST">
+            
             <section id="checkout-form">
                 <section class="inner-box">
                     <h2>Contact</h2>
@@ -271,6 +272,10 @@
                         <input type="text" placeholder="Expiry (MM/YY)">
                         <!-- TODO: Add tooltip for CVV -->
                         <input type="number" placeholder="CVV">
+                        <span class="tooltip">
+                            ?
+                            <span class="tooltip-text">the 3 whacky numbers on the back</span>
+                        </span>
                     </section>
                     <input class="last-input" type="text" placeholder="Name on Card">
                 </section>
@@ -279,10 +284,7 @@
                     <h2>Billing Address</h2>
                     <input type="text" placeholder="Country or Region">  
     
-                    <section class="horiz-input">
-                        <input type="text" placeholder="First name">
-                        <input type="text" placeholder="Last Name">
-                    </section>
+                    <input type="text" placeholder="Full Name">
     
                     <section id="address-section">
                         <input type="text" placeholder="Address"> 
@@ -304,7 +306,7 @@
                             <option value="ACT">ACT</option>
                             <option value="tasmania">Tasmania</option>
                         </select>
-                        <input type="text" placeholder="Postcode">
+                        <input type="text" placeholder="Pfostcode">
                     </section> 
     
                     <input class="last-input" type="number" placeholder="Phone (optional)">
@@ -349,9 +351,9 @@
                     <h3><b>Total</b></h3>
                     <h3><b>$4.90</b></h3>
                 </section>
-                <a href="confirmation"><button id="submit-order-button" class="main-button">Submit Order</button></a>
+                <button id="submit-order-button" class="main-button" type="submit">Submit Order</button>
             </section>
-        </article>
+        </form>
 
         <footer id="checkout-footer" class="back-box">
             <a href=".">Privacy Policy</a>
@@ -360,6 +362,6 @@
         </footer>
 
         <script src="../navbar.js"></script>
-
+        <script src="checkout-validation.js"></script>
     </body>
 </html>

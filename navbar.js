@@ -101,6 +101,11 @@ function closeSuperMenu() {
 
 }
 
+function onSearch(){
+    const searchQuery = document.getElementById('search-bar-input').value;
+    window.location.href = "results/?search=" + searchQuery;
+}
+
 // TODO: cite https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion
 var accordion = document.getElementById("accordion").childNodes;
 console.log(accordion)

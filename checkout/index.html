@@ -109,21 +109,47 @@
         <aside id="sidebar" class="back-box close-menu">
             
             <button class="sidebar-exit-button" onclick="closeMenu()"><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Exit icon.svg" alt=""></button>
+            
+            <div id="accordion">
+                <section class="menu-item-expand">
+                    <h4>E-Cards</h4>
+                    <h4>+</h4>
+                </section> 
 
-            <section class="menu-item-expand">
-                <h4>E-Cards</h4>
-                <h4>+</h4>
-            </section> 
+                <section class="panel">
+                    <a href="/results">Anniversary</a>
+                    <a href="/results">Birthday</a>
+                    <a href="/results">Congratulations</a>
+                    <a href="/results">Encouragement</a>
+                    <a href="/results">Friendship</a>
+                </section>
+    
+                <section class="menu-item-expand">
+                    <h4>SmashUps™</h4>
+                    <h4>+</h4>
+                </section>
 
-            <section class="menu-item-expand">
-                <h4>SmashUps™</h4>
-                <h4>+</h4>
-            </section>
+                <section class="panel">
+                    <a href="/results">Anniversary</a>
+                    <a href="/results">Birthday</a>
+                    <a href="/results">Congratulations</a>
+                    <a href="/results">Friendship</a>
+                    <a href="/results">Graduation</a>
+                </section>
+    
+                <section class="menu-item-expand">
+                    <h4>Creatacards™</h4>
+                    <h4>+</h4>
+                </section>
 
-            <section class="menu-item-expand">
-                <h4>Creatacards™</h4>
-                <h4>+</h4>
-            </section>
+                <section class="panel">
+                    <a href="/results">Anniversary</a>
+                    <a href="/results">Baby</a>
+                    <a href="/results">Birthday</a>
+                    <a href="/results">Congratulations</a>
+                    <a href="/results">Encouragement</a>
+                </section>
+            </div>
 
             <section> 
                 <h4>View Postcards</h4>
@@ -160,9 +186,7 @@
             
             <section id="search-bar">
                 <input id="search-bar-input" type="text" placeholder="Search" autofocus>
-                <a href="results">
-                    <button id="search-button" class="main-button"><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Search Icon searchbar.svg" alt=""></button>
-                </a>
+                <button onclick="onSearch()" id="search-button" class="main-button"><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Search Icon searchbar.svg" alt=""></button>
             </section>
             
             <h3><b>Top Categories</b></h3>

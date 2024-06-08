@@ -109,21 +109,47 @@
         <aside id="sidebar" class="back-box close-menu">
             
             <button class="sidebar-exit-button" onclick="closeMenu()"><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Exit icon.svg" alt=""></button>
+            
+            <div id="accordion">
+                <section class="menu-item-expand">
+                    <h4>E-Cards</h4>
+                    <h4>+</h4>
+                </section> 
 
-            <section class="menu-item-expand">
-                <h4>E-Cards</h4>
-                <h4>+</h4>
-            </section> 
+                <section class="panel">
+                    <a href="/results">Anniversary</a>
+                    <a href="/results">Birthday</a>
+                    <a href="/results">Congratulations</a>
+                    <a href="/results">Encouragement</a>
+                    <a href="/results">Friendship</a>
+                </section>
+    
+                <section class="menu-item-expand">
+                    <h4>SmashUps™</h4>
+                    <h4>+</h4>
+                </section>
 
-            <section class="menu-item-expand">
-                <h4>SmashUps™</h4>
-                <h4>+</h4>
-            </section>
+                <section class="panel">
+                    <a href="/results">Anniversary</a>
+                    <a href="/results">Birthday</a>
+                    <a href="/results">Congratulations</a>
+                    <a href="/results">Friendship</a>
+                    <a href="/results">Graduation</a>
+                </section>
+    
+                <section class="menu-item-expand">
+                    <h4>Creatacards™</h4>
+                    <h4>+</h4>
+                </section>
 
-            <section class="menu-item-expand">
-                <h4>Creatacards™</h4>
-                <h4>+</h4>
-            </section>
+                <section class="panel">
+                    <a href="/results">Anniversary</a>
+                    <a href="/results">Baby</a>
+                    <a href="/results">Birthday</a>
+                    <a href="/results">Congratulations</a>
+                    <a href="/results">Encouragement</a>
+                </section>
+            </div>
 
             <section> 
                 <h4>View Postcards</h4>
@@ -160,7 +186,7 @@
             
             <section id="search-bar">
                 <input id="search-bar-input" type="text" placeholder="Search" autofocus>
-                <button id="search-button" class="main-button"><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Search Icon searchbar.svg" alt=""></button>
+                <button onclick="onSearch()" id="search-button" class="main-button"><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Search Icon searchbar.svg" alt=""></button>
             </section>
             
             <h3><b>Top Categories</b></h3>
@@ -250,32 +276,6 @@
             </a>
 
         </section>
-
-        <article id="confirmation-box" class="back-box">
-            
-            <a id="close-button" href="."><img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Exit icon.svg" alt=""></a>
-            
-            <h2>Order Confirmed!</h2>
-
-            <img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Envelope confirmation icon.svg" alt="Envelope confirmation">
-
-            <p>Thank you for shopping with Blue Mountain! A confirmation email has been sent to your inbox.</p>
-            
-            <article id="amount-delivery-section">
-                <section id="amount-section">
-                    <h3><b>$4.90</b></h3>
-                    <p>Total Amount</p>
-                </section>
-                
-                <section id="delivery-section">
-                    <h3><b>Instant Delivery</b></h3>
-                    <p>Cards direct to inbox</p>
-                </section>
-            </article>
-
-            <a href="."><button class="main-button">Continue Shopping</button></a>
-
-        </article>
 
         <footer>
             <!-- Add links to pages -->

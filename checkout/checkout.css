@@ -57,6 +57,7 @@ label{
 
 #discount-input{
     margin-bottom: 7px;
+    padding-block: 8.15px;
 }
 
 .inner-box label {
@@ -270,6 +271,4 @@ option:first-child {
     #submit-order-button {
         width: 100%;
     }
-
-    
 }

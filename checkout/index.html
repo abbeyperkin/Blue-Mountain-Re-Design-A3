@@ -374,7 +374,7 @@
                         </div>
                         <div>
                             <label for="cvv-input">CVV</label>
-                            <input onblur="checkIfFilled(this)" required id="cvv-input" type="number" placeholder="123">
+                            <input onblur="checkIfFilled(this)" maxlength="3" required id="cvv-input" type="number" placeholder="123">
                             <span class="tooltip">
                                 ?
                                 <span class="tooltip-text">The 3-digit code on the back of your card</span>
@@ -417,7 +417,7 @@
                         </div>
                         <div>
                             <label for="postcode-input">Post/ZIP Code</label>
-                            <input onblur="checkIfFilled(this)" required id="postcode-input" type="text" placeholder="1234">
+                            <input onblur="checkIfFilled(this)" required id="postcode-input" type="number" placeholder="1234">
                         </div>
                     </section>
                 </section>

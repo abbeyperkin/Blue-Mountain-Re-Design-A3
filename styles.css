@@ -621,6 +621,7 @@ a:hover {
     }
 
     .card-carousel{
+        overflow-x: hidden;
         width: 100%;
     }
 

@@ -370,7 +370,6 @@
     #date-scroll {
         overflow-x: hidden;
         text-wrap: nowrap;
-        overflow-x: scroll;
     }
 
     .member-section {

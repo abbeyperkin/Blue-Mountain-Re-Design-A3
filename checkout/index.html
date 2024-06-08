@@ -6,7 +6,7 @@
         <title>Document</title>
         <link rel="stylesheet" href="../styles.css">
         <link rel="stylesheet" href="checkout.css">
-        <!-- <base href="/Blue-Mountain-Re-Design-A3/"> -->
+        <base href="/Blue-Mountain-Re-Design-A3/">
     </head>
 
     <body>
@@ -286,21 +286,21 @@
                 <section class="inner-box">
                     <h2>Contact</h2>
                     <label for="email-address-input">Email</label>
-                    <input onblur="checkIfFilled(this)" id="email-address-input" class="last-input" type="email" placeholder="email@example.com">
+                    <input onblur="checkIfFilled(this)" required id="email-address-input" class="last-input" type="email" placeholder="email@example.com">
                 </section>
         
                 <section class="inner-box">
                     <h2>Payment</h2>
                     <label for="card-number-input">Card Number</label>
-                    <input onblur="checkIfFilled(this)" id="card-number-input" type="number" placeholder="1234 1234 1234 1234">
+                    <input onblur="checkIfFilled(this)" required id="card-number-input" type="number" placeholder="1234 1234 1234 1234">
                     <section class="horiz-input">
                         <div>
                             <label for="expiry-input">Expiry Date</label>
-                            <input onblur="checkIfFilled(this)" id="expiry-input" type="text" placeholder="(MM/YY)">
+                            <input onblur="checkIfFilled(this)" required id="expiry-input" type="text" placeholder="(MM/YY)">
                         </div>
                         <div>
                             <label for="cvv-input">CVV</label>
-                            <input onblur="checkIfFilled(this)" id="cvv-input" type="number" placeholder="123">
+                            <input onblur="checkIfFilled(this)" required id="cvv-input" type="number" placeholder="123">
                             <span class="tooltip">
                                 ?
                                 <span class="tooltip-text">The 3-digit code on the back of your card</span>
@@ -308,28 +308,28 @@
                         </div>
                     </section>
                     <label for="name-on-card-input">Name on Card</label>
-                    <input onblur="checkIfFilled(this)" id="name-on-card-input" class="last-input" type="text" placeholder="e.g. John Smith">
+                    <input onblur="checkIfFilled(this)" required id="name-on-card-input" class="last-input" type="text" placeholder="e.g. John Smith">
                 </section>
         
                 <section class="inner-box">
                     <h2>Billing Address</h2>
                     <label for="country-input">Country or Region</label>
-                    <input onblur="checkIfFilled(this)" id="country-input" type="text" placeholder="Country or Region">  
+                    <input onblur="checkIfFilled(this)" required id="country-input" type="text" placeholder="Country or Region">  
                     <label for="full-name-input">Full Name</label>
-                    <input onblur="checkIfFilled(this)" id="full-name-input" type="text" placeholder="First and last">
+                    <input onblur="checkIfFilled(this)" required id="full-name-input" type="text" placeholder="First and last">
                     <section id="address-section">
                         <label for="address-input">Address</label>
-                        <input onblur="checkIfFilled(this)" id="address-input" type="text" placeholder="House number and street name"> 
+                        <input onblur="checkIfFilled(this)" required id="address-input" type="text" placeholder="House number and street name"> 
                         <img id="address-search-icon" src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Small Search Icon.svg" alt="">    
                     </section>   
                     <label for="apartment-input">Apartment, unit, suite, etc. (optional)</label>
                     <input id="apartment-input" type="text">  
                     <label for="city-input">City</label>
-                    <input onblur="checkIfFilled(this)" id="city-input" type="text">       
+                    <input onblur="checkIfFilled(this)" required id="city-input" type="text">       
                     <section class="horiz-input">
                         <div>
                             <label for="state-select">State</label>
-                            <select onblur="checkIfFilled(this)" id="state-select">
+                            <select onblur="checkIfFilled(this)" required id="state-select">
                                 <option value="" disabled selected>Please Select</option>
                                 <option value="victoria">Victoria</option>
                                 <option value="queensland">Queensland</option>
@@ -343,7 +343,7 @@
                         </div>
                         <div>
                             <label for="postcode-input">Post/ZIP Code</label>
-                            <input onblur="checkIfFilled(this)" id="postcode-input" type="text" placeholder="1234">
+                            <input onblur="checkIfFilled(this)" required id="postcode-input" type="text" placeholder="1234">
                         </div>
                     </section>
                 </section>

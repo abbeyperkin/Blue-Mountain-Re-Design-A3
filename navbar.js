@@ -106,7 +106,7 @@ function onSearch(){
     window.location.href = "results/?search=" + searchQuery;
 }
 
-// TODO: cite https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion
+
 var accordion = document.getElementById("accordion").childNodes;
 console.log(accordion)
 var i;

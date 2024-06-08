@@ -22,11 +22,31 @@
     filter: drop-shadow(4px 4px 15px rgba(0, 0, 0, 0.151));
 }
 
+@keyframes slideUpMargin {
+    0% {
+        margin-bottom: -45px;
+    }
+
+    50% {
+        margin-bottom: -20px;
+    }
+        
+    100% {
+        margin-bottom: -30px;
+            
+    }
+}
+
 #hero-card {
     scale: 0.8;
     margin-left: -13px;
-    margin-bottom: -40px;
+    margin-bottom: -45px;
+    animation-name: slideUpMargin;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
+
 
 .doodle-text-container {
     position: absolute;

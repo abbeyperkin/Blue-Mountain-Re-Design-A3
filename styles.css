@@ -20,7 +20,7 @@ body {
     background-color: #f6fafa;
     overflow-x: hidden;
 }
-/* TODO: Fix not-scrollable */
+
 .not-scrollable {
     height: 98vh;
     overflow: hidden;

@@ -101,12 +101,17 @@ option:first-child {
 
 .discount-section {
     display: flex;
-    flex-direction: column;
 }
 
 .discount-section section {
     display: flex;
     align-items: center;
+}
+
+#discount-apply-button {
+    padding: 5px 10px;
+    margin-left: -50px;
+    font-size: 12px;
 }
 
 #subtotal {

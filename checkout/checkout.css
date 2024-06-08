@@ -36,6 +36,10 @@
     font-size: 12px;
 }
 
+.inner-box label {
+    font-size: 10px;
+}
+
 option:first-child {
     color: rgba(0, 0, 0, 0.3);
 }
@@ -55,11 +59,11 @@ option:first-child {
 }
 
 .horiz-input input {
-    width: 42%;
+    width: 80%;
 }
 
 .horiz-input select {
-    width: 49.3%;
+    width: 90%;
 }
 
 .tooltip{
@@ -71,7 +75,7 @@ option:first-child {
     text-align: center;
     position: absolute;
     right: 10px;
-    top: 5px;
+    top: 27px;
 }
 
 
@@ -101,7 +105,7 @@ option:first-child {
 #address-search-icon {
     position: absolute;
     right: 12px;
-    top: 20%;
+    top: 30px;
 }
 
 #checkout-form {
@@ -208,8 +212,27 @@ option:first-child {
     .inner-box input:not(.horiz-input input){
         width: 96%;
     }
-    .horiz-input input{
+
+    .horiz-input input {
+        width: 100%;
+    }
+
+    .horiz-input div {
         width: 45%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .horiz-input div:last-child {
+        margin-right: 25px;
+    }
+
+    .horiz-input select {
+        width: 108%;
+    }
+
+    .tooltip {
+        top:18px
     }
 
     .discount-section{

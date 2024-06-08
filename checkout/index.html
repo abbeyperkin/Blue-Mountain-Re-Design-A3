@@ -258,61 +258,73 @@
         </section>
 
         <form id="checkout-container" class="back-box" action="/confirmation/" method="POST">
-            
             <section id="checkout-form">
                 <section class="inner-box">
                     <h2>Contact</h2>
-                    <input class="last-input" type="email" placeholder="Enter your email">
+                    <label for="email-input">Email</label>
+                    <input id="email-input" class="last-input" type="email" placeholder="Enter your email">
                 </section>
-    
+        
                 <section class="inner-box">
                     <h2>Payment</h2>
-                    <input type="number" placeholder="Card number">
+                    <label for="card-number-input">Card Number</label>
+                    <input id="card-number-input" type="number" placeholder="Card number">
                     <section class="horiz-input">
-                        <input type="text" placeholder="Expiry (MM/YY)">
-                        <!-- TODO: Add tooltip for CVV -->
-                        <input type="number" placeholder="CVV">
-                        <span class="tooltip">
-                            ?
-                            <span class="tooltip-text">the 3 whacky numbers on the back</span>
-                        </span>
+                        <div>
+                            <label for="expiry-input">Expiry Date (MM/YY)</label>
+                            <input id="expiry-input" type="text" placeholder="Expiry (MM/YY)">
+                        </div>
+                        <div>
+                            <label for="cvv-input">CVV</label>
+                            <input id="cvv-input" type="number" placeholder="CVV">
+                            <span class="tooltip">
+                                ?
+                                <span class="tooltip-text">The 3 whacky numbers on the back</span>
+                            </span>
+                        </div>
                     </section>
-                    <input class="last-input" type="text" placeholder="Name on Card">
+                    <label for="name-on-card-input">Name on Card</label>
+                    <input id="name-on-card-input" class="last-input" type="text" placeholder="Name on Card">
                 </section>
-    
+        
                 <section class="inner-box">
                     <h2>Billing Address</h2>
-                    <input type="text" placeholder="Country or Region">  
-    
-                    <input type="text" placeholder="Full Name">
-    
+                    <label for="country-input">Country or Region</label>
+                    <input id="country-input" type="text" placeholder="Country or Region">  
+                    <label for="full-name-input">Full Name</label>
+                    <input id="full-name-input" type="text" placeholder="Full Name">
                     <section id="address-section">
-                        <input type="text" placeholder="Address"> 
-                        <img id="address-search-icon"src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Small Search Icon.svg" alt="">    
+                        <label for="address-input">Address</label>
+                        <input id="address-input" type="text" placeholder="Address"> 
+                        <img id="address-search-icon" src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/icons/Small Search Icon.svg" alt="">    
                     </section>   
-    
-                    <input type="text" placeholder="Apartment, unit, suite, e.g. (optional)">  
-    
-                    <input type="text" placeholder="City">       
-    
+                    <label for="apartment-input">Apartment, unit, suite, etc. (optional)</label>
+                    <input id="apartment-input" type="text" placeholder="Apartment, unit, suite, e.g. (optional)">  
+                    <label for="city-input">City</label>
+                    <input id="city-input" type="text" placeholder="City">       
                     <section class="horiz-input">
-                        <select>
-                            <option value="na" selected>State</option>
-                            <option value="victoria">Victoria</option>
-                            <option value="queensland">Queensland</option>
-                            <option value="new south wales">New South Wales</option>
-                            <option value="western australia">Western Australia</option>
-                            <option value="northern territory">Northern Territory</option>
-                            <option value="ACT">ACT</option>
-                            <option value="tasmania">Tasmania</option>
-                        </select>
-                        <input type="text" placeholder="Pfostcode">
+                        <div>
+                            <label for="state-select">State</label>
+                            <select id="state-select">
+                                <option value="victoria">Victoria</option>
+                                <option value="queensland">Queensland</option>
+                                <option value="new south wales">New South Wales</option>
+                                <option value="western australia">Western Australia</option>
+                                <option value="northern territory">Northern Territory</option>
+                                <option value="ACT">ACT</option>
+                                <option value="tasmania">Tasmania</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="postcode-input">Postcode</label>
+                            <input id="postcode-input" type="text" placeholder="Postcode">
+                        </div>
                     </section> 
-    
-                    <input class="last-input" type="number" placeholder="Phone (optional)">
+                    <label for="phone-input">Phone (optional)</label>
+                    <input id="phone-input" class="last-input" type="number" placeholder="Phone (optional)">
                 </section>
             </section>
-
+        
             <section id="order-summary" class="inner-box">
                 <h2>Order Summary</h2>
                 <a href="product">
@@ -325,7 +337,7 @@
                         <h3>$2.95</h3>
                     </section>
                 </a>
-
+        
                 <a href="product">
                     <section class="order-sum-item">
                         <img src="https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/Assets/cards/So much happiness GIF 1.svg" alt="">
@@ -336,17 +348,17 @@
                         <h3>$1.95</h3>
                     </section>
                 </a>
-                <!-- FIXME alignment off-->
                 <section class="discount-section">
+                    <label for="discount-input">Discount Code</label>
                     <input id="discount-input" type="text" placeholder="Discount code">
                     <button id="discount-apply-button" class="main-button">Apply</button>
                 </section>
-
+        
                 <section id="subtotal">
                     <h3>Subtotal</h3>
                     <h3>$4.90</h3>
                 </section>
-
+        
                 <section id="total">
                     <h3><b>Total</b></h3>
                     <h3><b>$4.90</b></h3>
@@ -354,6 +366,8 @@
                 <button id="submit-order-button" class="main-button" type="submit">Submit Order</button>
             </section>
         </form>
+        
+        
 
         <footer id="checkout-footer" class="back-box">
             <a href=".">Privacy Policy</a>

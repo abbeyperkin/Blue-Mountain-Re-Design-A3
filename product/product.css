@@ -129,6 +129,7 @@
     }
 
     #product-info-container {
+        position: relative;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
@@ -157,6 +158,8 @@
 
     #purchase-info-container h2{
         font-size: 35px;
+        position: absolute;
+        bottom: 100px;
     }
 
     #small-member {
@@ -172,6 +175,8 @@
     }
 
     #gift {
-        margin-bottom: -160px;
+        position: absolute;
+        bottom: 44px;
+        right: 20px;
     }
 }

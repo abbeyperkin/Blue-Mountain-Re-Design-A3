@@ -114,7 +114,8 @@
     }
 
     .product-preview {
-        width: 600px;
+        box-sizing: border-box;
+        width: 427.51px;
         margin-right: 13px;
     }
 
@@ -127,10 +128,12 @@
     }
 
     #product-info-container {
+        box-sizing: border-box;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 30px;
+        width: 611.49px;
     }
 
     #product-info-container h2 {

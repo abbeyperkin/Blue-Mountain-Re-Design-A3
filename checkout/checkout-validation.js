@@ -1,7 +1,7 @@
 document.getElementById('checkout-container').onsubmit = function(e) {
     e.preventDefault();
     console.log('REDIRECTING')
-    window.location.href = '/confirmation';
+    window.location.href = 'https://abbeyperkin.github.io/Blue-Mountain-Re-Design-A3/confirmation';
 
 };
 

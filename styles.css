@@ -537,10 +537,9 @@ footer article #desktop-links{
 #footer-links {
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
+    width: 98.5%;
     padding: 10px 20px;
     padding-bottom: 17px;
-    
 }
 
 #footer-links section {
@@ -635,6 +634,10 @@ a:hover {
 
     footer #footer-links a{
         margin-top: 6px;
+    }
+
+    footer #footer-links{
+        width: 100%;
     }
     
     #social-links{

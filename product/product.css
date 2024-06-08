@@ -65,6 +65,10 @@
     margin-bottom: 0px;
 }
 
+#inside-verse p {
+    max-width: 200px;
+}
+
 #purchase-info-container {
     display: flex;
     justify-content: space-between;

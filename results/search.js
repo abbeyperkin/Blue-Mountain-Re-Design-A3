@@ -3,5 +3,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let query = params.get("search");
     //FIXME: breaks on null lmao
     const searchHeader = document.getElementById('searchQuery');
-    searchHeader.innerHTML = '"' + query + '"';
+
+    if (query){
+        searchHeader.innerHTML = '"' + query + '"';
+    } else {
+        searchHeader.innerHTML = '"Birthday"'
+    }
 });

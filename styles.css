@@ -637,13 +637,13 @@ a:hover {
     }
 
     footer #footer-links{
-        width: 100%;
+        width: 99.8%;
     }
     
     #social-links{
         justify-content: space-between;
         margin-right: -50px;
-        width: 104%;
+        width: 104.8%;
     }
 
 }
